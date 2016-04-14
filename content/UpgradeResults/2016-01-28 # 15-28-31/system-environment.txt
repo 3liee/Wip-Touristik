@@ -1,0 +1,53 @@
+PCID: 'KEBD-8OD3'
+LicenseKey: 'ZP13F-UHHH-BPQJ-CMUR-PQSR-4CSP-THR4-D44KDN'
+VersionNo: '13.0.0.0'
+VersionDate: '25.01.2016 15:56:30'
+BuildFlavor: 'RELEASE'
+VersionName: 'Home'
+UsedUILanguage2: 'de'
+OS: 'Microsoft Windows NT 6.1.7601 Service Pack 1'
+NetVersion: '4.0.30319.34209'
+Is64BitProcess: 'False'
+Is64BitOperatingSystem: 'True'
+CurrentCulture: 'de-DE'
+CurrentUICulture: 'de-DE'
+WebProject.IsLoaded: 'False'
+WebProject.Settings.Title: ''
+Titel: Zeta Producer 13
+Version: 13.0.0.0
+Versionsname: Home
+Datum: 25.01.2016 15:56
+Lizenz: ZP13F-UHHH-BPQJ-CMUR-PQSR-4CSP-THR4-D44KDN
+Sprache: de
+Kultur: de-DE
+UI-Kultur: de-DE
+Web-Projekt: (keines)
+
+User domain name: Peiskar-PC,
+User name: Peiskar,
+Machine name: PEISKAR-PC,
+OS version: Microsoft Windows NT 6.1.7601 Service Pack 1,
+CLR version: 4.0.30319.34209,
+Command line:  -splashid=7586 ,
+Current directory: C:\Users\Peiskar\AppData\Local\Zeta Producer 13.
+
+
+Host name: Peiskar-PC,
+IP address: fe80::e11f:847c:deae:f686%14
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=fe80::e11f:847c:deae:f686%14,
+IP address: 169.254.246.134
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=169.254.246.134,
+IP address: 192.168.137.1
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=192.168.137.1,
+IP address: 2a02:810d:11c0:1cd0:1d7f:e276:6569:f3d2
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=2a02:810d:11c0:1cd0:1d7f:e276:6569:f3d2,
+IP address: 2a02:810d:11c0:1cd0:a8d4:b7d2:12b9:5496
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=2a02:810d:11c0:1cd0:a8d4:b7d2:12b9:5496,
+IP address: fe80::1d7f:e276:6569:f3d2%13
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=fe80::1d7f:e276:6569:f3d2%13,
+IP address: 192.168.178.20
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=192.168.178.20,
+IP address: ::1
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=::1,
+IP address: 127.0.0.1
+Lookup address: http://zeta-sw.com/geoip.aspx?ip=127.0.0.1.

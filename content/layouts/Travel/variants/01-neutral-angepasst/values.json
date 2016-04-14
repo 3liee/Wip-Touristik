@@ -1,0 +1,805 @@
+﻿{
+    "settings": {
+        "guiColor": "rgba(60, 63, 67, 0.8)",
+        "isAutomatic": true,
+        "isProtected": false,
+        "nameIsStandAlone": false,
+        "orderPosition": 0,
+        "version": "12.5.6.0"
+    },
+    "values": [
+        {
+            "uniqueID": "webname-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "logo",
+            "value": "../assets/logo.png"
+        },
+        {
+            "uniqueID": "globalMenuColor",
+            "value": "#242428"
+        },
+        {
+            "uniqueID": "globalFontColor",
+            "value": "#0C0C0D"
+        },
+        {
+            "uniqueID": "globalHeadingColor",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "globalLinkColor",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "globalBackgroundColor",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "header-image",
+            "value": "../assets/stock-images/meran.jpg"
+        },
+        {
+            "uniqueID": "header-image-width",
+            "value": 980
+        },
+        {
+            "uniqueID": "header-image-area",
+            "value": "Header"
+        },
+        {
+            "uniqueID": "contentcopy-max-image-width",
+            "value": 940
+        },
+        {
+            "uniqueID": "favicon",
+            "value": "../assets/stock-files/favicon.ico"
+        },
+        {
+            "uniqueID": "global-background-color",
+            "value": "#FEF9C0",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "global-background-image",
+            "value": null,
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "global-font-family",
+            "value": "Verdana",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "global-unordered-list-style",
+            "value": "disc"
+        },
+        {
+            "uniqueID": "global-ordered-list-style",
+            "value": "decimal"
+        },
+        {
+            "uniqueID": "sidebar-position",
+            "value": "left",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webtext-position-top",
+            "value": "10px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webname-font-family",
+            "value": "Verdana",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webname-font-size",
+            "value": "22px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webname-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "webname-font-weight",
+            "value": "normal",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webname-font-style",
+            "value": "normal",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webname-text-transform",
+            "value": "none"
+        },
+        {
+            "uniqueID": "webslogan-font-size",
+            "value": "22px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webslogan-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webslogan-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "webslogan-font-weight",
+            "value": "normal",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "webslogan-text-transform",
+            "value": "none",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "logo-image-width",
+            "value": 209,
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "logo-image-height",
+            "value": 64,
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "logo-position-top",
+            "value": "0px"
+        },
+        {
+            "uniqueID": "xmenu-font-size",
+            "value": "14px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "xmenu-text-shadow-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "xmenu-font-weight",
+            "value": "normal",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "xmenu-position-top",
+            "value": "48px"
+        },
+        {
+            "uniqueID": "xmenu-hyperlink-inactive-font-color",
+            "value": "#242428"
+        },
+        {
+            "uniqueID": "xmenu-hyperlink-inactive-decoration",
+            "value": "underline",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "xmenu-hyperlink-hover-font-color",
+            "value": "#0C0C0D"
+        },
+        {
+            "uniqueID": "xmenu-hyperlink-hover-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "contentarea-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "contentarea-background-image",
+            "value": null,
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "articletext-font-size",
+            "value": "18px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "articletext-lineheight",
+            "value": "16px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "articletext-font-color",
+            "value": "#0C0C0D"
+        },
+        {
+            "uniqueID": "paragraph-spacing",
+            "value": "15px"
+        },
+        {
+            "uniqueID": "article-inactive-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "article-inactive-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "article-hover-font-color",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "article-hover-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "article-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "articlearea-spacing",
+            "value": "15px"
+        },
+        {
+            "uniqueID": "contentarea-box-shadow",
+            "value": false,
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "search-font-size",
+            "value": "14px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "search-position-top",
+            "value": "44px"
+        },
+        {
+            "uniqueID": "searchfield-font-color",
+            "value": "#0C0C0D"
+        },
+        {
+            "uniqueID": "searchfield-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "searchfield-image",
+            "value": "../assets/stock-images/magnifier.png"
+        },
+        {
+            "uniqueID": "searchbutton-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "searchbutton-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "searchbutton-hover-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "searchbutton-hover-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-font-size",
+            "value": "12px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-background-color",
+            "value": "#F8CA07",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-text-shadow-color",
+            "value": "transparent",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-arrow-image",
+            "value": "../assets/stock-images/arrow.png"
+        },
+        {
+            "uniqueID": "menu1-inactive-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-inactive-background-color",
+            "value": "transparent"
+        },
+        {
+            "uniqueID": "menu1-hover-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-hover-background-color",
+            "value": "#FEF9C0",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-active-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu1-active-background-color",
+            "value": "#FEF9C0",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-font-size",
+            "value": "14px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-text-shadow-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-inactive-font-color",
+            "value": "#242428",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-inactive-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-hover-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-hover-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-active-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "dropdownmenu-active-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu2-font-size",
+            "value": "16px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu2-text-shadow-color",
+            "value": "transparent",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu2-inactive-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu2-hyperlink-inactive-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "menu2-hover-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu2-hyperlink-hover-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "menu2-active-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu2-active-font-weight",
+            "value": "bold"
+        },
+        {
+            "uniqueID": "menu2-hyperlink-active-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "menu2-active-pre-character-color",
+            "value": "#242428",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu2-active-pre-character-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "menu3-font-size",
+            "value": "16px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "menu3-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "menu3-inactive-font-color",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "menu3-hyperlink-inactive-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "menu3-hover-font-color",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "menu3-hyperlink-hover-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "menu3-active-font-color",
+            "value": "#e95d49"
+        },
+        {
+            "uniqueID": "menu3-active-font-weight",
+            "value": "normal"
+        },
+        {
+            "uniqueID": "menu3-hyperlink-active-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "header-caption-font-size",
+            "value": "12px"
+        },
+        {
+            "uniqueID": "header-caption-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "headertext-inactive-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "headertext-inactive-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "headertext-hover-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "headertext-hover-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "header-image-height",
+            "value": 350
+        },
+        {
+            "uniqueID": "header-navicons",
+            "value": true
+        },
+        {
+            "uniqueID": "header-pagination",
+            "value": true
+        },
+        {
+            "uniqueID": "header-randomize",
+            "value": true
+        },
+        {
+            "uniqueID": "breadcrumb-font-size",
+            "value": "12px"
+        },
+        {
+            "uniqueID": "breadcrumb-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "breadcrumb-separator-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "breadcrumb-separator-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "breadcrumb-hyperlink-inactive-font-color",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "breadcrumb-hyperlink-inactive-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "breadcrumb-hyperlink-hover-font-color",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "breadcrumb-hyperlink-hover-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "breadcrumb-hyperlink-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "pagetitle-font-size",
+            "value": "18px"
+        },
+        {
+            "uniqueID": "pagetitle-margin-top",
+            "value": "0px"
+        },
+        {
+            "uniqueID": "pagetitle-margin-bottom",
+            "value": "20px"
+        },
+        {
+            "uniqueID": "pagetitle-font-color",
+            "value": "#00B552",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "pagetitle-text-shadow-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "pagetitle-font-weight",
+            "value": "bold"
+        },
+        {
+            "uniqueID": "pagetitle-text-transform",
+            "value": "uppercase"
+        },
+        {
+            "uniqueID": "articleheading-font-size",
+            "value": "14px"
+        },
+        {
+            "uniqueID": "articleheading-margin-top",
+            "value": "15px"
+        },
+        {
+            "uniqueID": "articleheading-margin-bottom",
+            "value": "15px"
+        },
+        {
+            "uniqueID": "articleheading-font-color",
+            "value": "#242428",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "articleheading-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "articleheading-font-weight",
+            "value": "bold"
+        },
+        {
+            "uniqueID": "articlesubheading-font-size",
+            "value": "14px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "articlesubheading-margin-top",
+            "value": "5px"
+        },
+        {
+            "uniqueID": "articlesubheading-margin-bottom",
+            "value": "5px"
+        },
+        {
+            "uniqueID": "articlesubheading-font-color",
+            "value": "#242428",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "articlesubheading-font-weight",
+            "value": "bold"
+        },
+        {
+            "uniqueID": "button-font-size",
+            "value": "16px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "button-font-weight",
+            "value": "bold"
+        },
+        {
+            "uniqueID": "button-text-shadow-color",
+            "value": "#0c0c0d"
+        },
+        {
+            "uniqueID": "button-inactive-font-color",
+            "value": "#e0e2e5"
+        },
+        {
+            "uniqueID": "button-inactive-background-color",
+            "value": "#242428"
+        },
+        {
+            "uniqueID": "button-mouseover-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "button-mouseover-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "newsarea-background-color",
+            "value": "#f1f2f3"
+        },
+        {
+            "uniqueID": "newsarea-background-image",
+            "value": "../assets/bluehendes-barock-006.jpg",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "newsheading-font-size",
+            "value": "16px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "newsheading-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "newsheading-text-shadow-color",
+            "value": "transparent"
+        },
+        {
+            "uniqueID": "newsheading-font-weight",
+            "value": "bold"
+        },
+        {
+            "uniqueID": "newsheading-background-color",
+            "value": "#242428"
+        },
+        {
+            "uniqueID": "newstext-font-size",
+            "value": "12px"
+        },
+        {
+            "uniqueID": "newstext-lineheight",
+            "value": "21px"
+        },
+        {
+            "uniqueID": "newstext-font-color",
+            "value": "#0C0C0D"
+        },
+        {
+            "uniqueID": "newsarea-paragraph-spacing",
+            "value": "15px"
+        },
+        {
+            "uniqueID": "newsarea-hyperlink-inactive-font-color",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "newsarea-hyperlink-inactive-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "newsarea-hyperlink-hover-font-color",
+            "value": "#E3341C"
+        },
+        {
+            "uniqueID": "newsarea-hyperlink-hover-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "newsarea-hyperlink-text-shadow-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "newsarea-spacing",
+            "value": "0px"
+        },
+        {
+            "uniqueID": "newsarea-box-shadow",
+            "value": true
+        },
+        {
+            "uniqueID": "teaser-banner-font-size",
+            "value": "16px",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "teaser-banner-font-color",
+            "value": "#0C0C0D"
+        },
+        {
+            "uniqueID": "teaser-afterfooter-font-size",
+            "value": "12px"
+        },
+        {
+            "uniqueID": "teaser-afterfooter-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "teaser-afterfooter-background-color",
+            "value": "#242428"
+        },
+        {
+            "uniqueID": "afterfooter-hyperlink-inactive-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "afterfooter-hyperlink-inactive-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "afterfooter-hyperlink-hover-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "afterfooter-hyperlink-hover-decoration",
+            "value": "underline"
+        },
+        {
+            "uniqueID": "footer-font-size",
+            "value": "12px"
+        },
+        {
+            "uniqueID": "footer-font-color",
+            "value": "#0C0C0D",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "footer-background-color",
+            "value": "#FFFFFF",
+            "manuallyModified": true
+        },
+        {
+            "uniqueID": "footer-hyperlink-inactive-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "footer-hyperlink-inactive-decoration",
+            "value": "none"
+        },
+        {
+            "uniqueID": "footer-hyperlink-hover-font-color",
+            "value": "#ffffff"
+        },
+        {
+            "uniqueID": "footer-hyperlink-hover-decoration",
+            "value": "underline"
+        }
+    ],
+    "assets": [
+        {
+            "fileName": "assets/*",
+            "mode": "Copy"
+        }
+    ]
+}
