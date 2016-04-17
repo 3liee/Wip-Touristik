@@ -1,5 +1,345 @@
-/* 
+/**
+* jQuery Plugin to add basic "swipe" support on touch-enabled devices
+*
+* @author Yair Even Or
+* @version 1.0.0 (March 20, 2013)
+*/
+
+(function($){
+	"use strict";
+
+    $.event.special.swipe = {
+        setup: function(){
+            $(this).bind('touchstart', $.event.special.swipe.handler);
+        },
+
+        teardown: function(){
+            $(this).unbind('touchstart', $.event.special.swipe.handler);
+        },
+
+        handler: function(event){
+            var args = [].slice.call( arguments, 1 ), // clone arguments array, remove original event from cloned array
+                touches = event.originalEvent.touches,
+                startX, startY,
+                deltaX = 0, deltaY = 0,
+                that = this;
+
+            event = $.event.fix(event);
+
+            if( touches.length == 1 ){
+                startX = touches[0].pageX;
+                startY = touches[0].pageY;
+                this.addEventListener('touchmove', onTouchMove, false);
+            }
+
+            function cancelTouch(){
+                that.removeEventListener('touchmove', onTouchMove);
+                startX = startY = null;
+            }
+
+            function onTouchMove(e){
+                //e.preventDefault();
+
+                var Dx = startX - e.touches[0].pageX,
+                    Dy = startY - e.touches[0].pageY;
+
+                if( Math.abs(Dx) >= 50 ){
+                    cancelTouch();
+                    deltaX = (Dx > 0) ? -1 : 1;
+                }
+                else if( Math.abs(Dy) >= 20 ){
+                    cancelTouch();
+                    deltaY = (Dy > 0) ? 1 : -1;
+                }
+
+                event.type = 'swipe';
+                args.unshift(event, deltaX, deltaY); // add back the new event to the front of the arguments with the delatas
+                return ($.event.dispatch || $.event.handle).apply(that, args);
+            }
+        }
+    };
+})($z);
+
+/*! 
  * ZP Image-Gallery Widget
- * Copyright $Date:: 2015#$ Zeta Software GmbH
+ * Copyright $Date:: 2014#$ Zeta Software GmbH
  */
-$z(document).ready(function(){$z(".zpImageGallery[id]").each(function(){new zp.ImageGallery().init("#"+this.id.toString())});$z(".zpSlideshow[id]").each(function(){new zp.Slideshow().init("#"+this.id.toString())})});zp.ImageGallery=function(){this.root=null;this.numbershow=true;this.titleshow=false;this.htmltitle="";this.kind="gallery";this.width=200;this.height=150;this.bordercolor="silver";this.borderwidth=0;this.margin=10;this.overlaycolor="black";this.titleposition="over";this.transition="elastic";this.slideshow=false;this.slideshowinterval=5000;this.slideshowtimer=0;this.lang="de";var a=this;this.init=function(b){if(!($z.fancybox)){trace("Fehler: Fancybox ist nicht geladen")}a.root=b;a.numbershow=$z(a.root).data("numbershow")!==0?true:false;a.titleshow=$z(a.root).data("titleshow")!==0?true:false;a.htmltitle=$z(a.root).data("htmltitle");a.kind=$z(a.root).data("kind");a.width=$z(a.root).data("width");if(parseInt(a.width)){a.width=a.width+"px"}a.height=$z(a.root).data("height");if(parseInt(a.height)){a.height=a.height+"px"}if(a.height=="auto"&&$z(a.root).hasClass("zpSlideshow")){a.width="auto";var c=$z(a.root).data("maxheight")/$z(a.root).data("width");var g=$z(a.root).parent().parent().width();var f=Math.round(g*c);$z(a.root).parent().width(g+2).height(f+6);$z(a.root).width(g+2).height(f+6);$z(a.root+" .slide").width(g).height(f+4).css({paddingRight:"2px",paddingBottom:"2px"});$z(a.root+" .slide .caption").width(g-2)}a.bordercolor=$z(a.root).data("bordercolor");a.borderwidth=$z(a.root).data("borderwidth");a.margin=$z(a.root).data("margin");a.titleposition=$z(a.root).data("titleposition");a.zoom=$z(a.root).data("transition");a.transition=$z(a.root).data("inner-transition");if(a.transition==="none"){a.changeFade=0}else{a.changeFade=100}a.slideshow=$z(a.root).data("slideshow")!==0?true:false;a.slideshowinterval=$z(a.root).data("slideshowinterval")*1000;a.slideshowtimer=0;a.lang=$z(a.root).data("lang");$z(a.root+" .fancybox").fancybox({hideOnContentClick:true,padding:0,margin:30,cyclic:true,changeSpeed:0,changeFade:a.changeFade,speedIn:300,speedOut:300,transitionIn:a.zoom,transitionOut:a.zoom,easingIn:"easeOutCubic",easingOut:"easeInCubic",titleShow:a.titleshow,overlayColor:a.overlaycolor,overlayOpacity:0.85,titlePosition:a.titleposition,titleFormat:function(l,j,k){if(typeof a.htmltitle!="undefined"&&a.htmltitle!==null&&a.htmltitle!==""){l=a.htmltitle}if(j.length>1&&a.numbershow){if(a.lang==="en"){return'<span id="fancybox-title-over">Image '+(k+1)+" of "+j.length+(l?": "+l:"")+"</span>"}else{return'<span id="fancybox-title-over">Bild '+(k+1)+" von "+j.length+(l?": "+l:"")+"</span>"}}else{return'<span id="fancybox-title-over">'+l+"</span>"}},onComplete:function(){if(a.slideshow){a.slideshowtimer=setInterval($z.fancybox.next,a.slideshowinterval)}},onCleanup:function(){if(a.slideshow){clearInterval(a.slideshowtimer)}}});var d=document.getElementsByTagName("head")[0],i=document.createElement("style"),e="	"+a.root+"{overflow: hidden;";if(a.kind==="singleimageleft"){e+=" width: "+a.width+"; min-height: "+a.height+"; float: left; margin-right: 20px; margin-bottom: 5px;"}else{if(a.kind==="singleimageright"){e+=" width: "+a.width+"; min-height: "+a.height+"; float: right; margin-left: 20px; margin-bottom: 5px;"}else{if(a.kind==="singleimagecenter"){e+=" width: "+a.width+"; float: none !important; margin: 0 auto 5px auto;"}else{if(a.kind==="singleimage"){e+=" width: "+a.width+"; float: none !important; margin-bottom: 5px;"}else{if(a.kind==="singleimager"){e+=" width: "+a.width+"; float: none !important; margin: 0 0 5px auto;"}}}}}e+="}";e+=a.root+" > a, "+a.root+" .slide > a { 				width: "+a.width+"; 				height: "+a.height+"; 				box-sizing: border-box; 				margin: 0 "+a.margin+"px "+a.margin+"px 0; ";if(a.bordercolor=="default"){e+=""}else{if(a.bordercolor!=="transparent"){e+="	border: "+a.borderwidth+"px solid "+a.bordercolor+"; box-sizing: border-box;"}else{e+="	border: none ;"}}e+="		padding: 0px; 				display: block; 				text-align: center; 				vertical-align: middle; 				float: left; 				overflow: hidden; 			}";e+=a.root+" > a img { 				border: none !important;}";var h=document.createTextNode(e.replace(/\s+/g," "));i.type="text/css";if(i.styleSheet){i.styleSheet.cssText=h.nodeValue}else{i.appendChild(h)}d.appendChild(i)}};zp.Slideshow=function(){this.root=null;this.slideshowinterval=5000;this.pauseonhover=true;var a=this;this.init=function(b){a.root=b;a.slideshowinterval=$z(a.root).data("slideshowinterval")*1000;a.pauseonhover=$z(a.root).data("pauseonhover")!==0?true:false;$z(b+" div.slide:not(:first)").css("opacity","0");a.slideshow=setInterval(function(){a.slideSwitch(b)},a.slideshowinterval);$z(a.root).hover(function(){if(a.pauseonhover){clearInterval(a.slideshow)}$z(document).keydown(function(c){if(c.which===37){a.slideSwitch(b,"prev")}else{if(c.which===39){a.slideSwitch(b,"next")}}})},function(){$z(document).unbind("keydown");if(a.pauseonhover){a.slideshow=setInterval(function(){a.slideSwitch(b)},a.slideshowinterval)}})};this.slideSwitch=function(e,d){d=typeof d!=="undefined"?d:"next";var b=$z(e+" div.slide.active");if(b.length===0){b=$z(e+" div.slide:first")}var c;if(d==="next"){c=b.next(".slide").length?b.next(".slide"):$z(e+" div.slide:first")}else{if(d==="prev"){c=b.prev(".slide").length?b.prev(".slide"):$z(e+" div.slide:last")}}b.addClass("last-active").css({"z-index":101});c.css({opacity:"0.0"}).addClass("active").css({"z-index":102}).animate({opacity:"1.0"},500,function(){b.removeClass("active last-active").css({"z-index":"100",opacity:"0"})})}};
+ 
+ // This code depends on jquery.fancybox css and js being loded via the global "_Shared"-Widget.
+ 
+$z(document).ready(function () {
+	// initialize each zpImageGallery
+	$z(".zpImageGallery[id]").each(function (){
+		new zp.ImageGallery().init("#" + this.id.toString());
+	});
+	
+	//play each zpSlideshow (part of zpImageGallery)
+	$z(".zpSlideshow[id]").each(function (){
+		new zp.Slideshow().init("#" + this.id.toString());
+	});
+});
+
+zp.ImageGallery = function (){
+	this.root = null;
+	this.numbershow = true;
+	this.titleshow = false;
+	this.htmltitle = "";
+	this.kind = "gallery";
+	this.width = 200;
+	this.height = 150;
+	this.bordercolor = "silver";
+	this.borderwidth = 0;
+	this.margin = 10;
+	this.overlaycolor = "black";
+	this.titleposition = "over"; /* inside, over - not supported by us: outside*/
+	this.transition = "elastic"; /* elastic, fade, none */
+	this.slideshow = false;
+	this.slideshowinterval = 5000;
+	this.slideshowtimer = 0;
+	this.lang = "de";
+	//this.easing = "swing";
+	//this.changefade = "fast";
+	var igal = this;
+	
+	this.init = function (elemid){
+		if(!($z.fancybox)){
+			trace("Fehler: Fancybox ist nicht geladen");
+		}
+		
+		igal.root = elemid;
+		igal.numbershow = $z(igal.root).data("numbershow")!==0?true:false;
+		igal.titleshow = $z(igal.root).data("titleshow")!==0?true:false;
+		igal.htmltitle = $z(igal.root).data("htmltitle");
+		igal.kind = $z(igal.root).data("kind");
+		igal.width = $z(igal.root).data("width");
+		if ( parseInt(igal.width) ){
+			igal.width = igal.width + "px";
+		}
+		igal.height = $z(igal.root).data("height");
+		if ( parseInt(igal.height) ){
+			igal.height = igal.height + "px";
+		}
+		// make it more responsive, as it used to be always fill layout width and cut off by news columns
+		if ( igal.height == "auto" && $z(igal.root).hasClass("zpSlideshow") ){
+			igal.width = "auto";
+			var factor = $z(igal.root).data("maxheight") / $z(igal.root).data("width");
+			var newwidth = $z(igal.root).parent().parent().width();
+			var newhight = Math.round(newwidth * factor);
+			$z(igal.root).parent().width(newwidth + 2).height(newhight + 6);
+			$z(igal.root).width(newwidth + 2).height(newhight + 6);
+			$z(igal.root + " .slide").width(newwidth).height(newhight + 4).css({"paddingRight":"2px", "paddingBottom":"2px"});
+			$z(igal.root + " .slide .caption").width(newwidth - 2);
+		}
+		igal.bordercolor = $z(igal.root).data("bordercolor");
+		igal.borderwidth = $z(igal.root).data("borderwidth");
+		igal.margin = $z(igal.root).data("margin");
+		igal.marginhor = parseInt(igal.margin)-4; // -4px compensates for space between inline-block elements https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+		igal.titleposition = $z(igal.root).data("titleposition");
+		igal.zoom = $z(igal.root).data("transition");
+		igal.transition = $z(igal.root).data("inner-transition");
+		
+		if (igal.transition === "none") {
+			igal.changeFade = 0;
+		} else {
+			igal.changeFade = 100;
+		}
+
+		igal.slideshow = $z(igal.root).data("slideshow")!==0?true:false;
+		igal.slideshowinterval = $z(igal.root).data("slideshowinterval") * 1000;
+		igal.slideshowtimer = 0;
+		igal.lang = $z(igal.root).data("lang");
+		
+		$z(igal.root + " .fancybox").fancybox({
+			'hideOnContentClick': true,
+			'padding': 0,	//Space between FancyBox wrapper and content
+			'margin': 30,	//Space between viewport and FancyBox wrapper
+			'cyclic' : true, 
+			'changeSpeed'		: 0, 
+			'changeFade'		: igal.changeFade,
+			'speedIn'	: 300,
+			'speedOut'	: 300,
+			'transitionIn'	: igal.zoom,
+			'transitionOut'	: igal.zoom, 
+			'easingIn'			: 'easeOutCubic', 
+			'easingOut'			: 'easeInCubic', 
+			'titleShow'			: igal.titleshow,
+			'overlayColor'	: igal.overlaycolor,
+			'overlayOpacity': 0.85,
+			'titlePosition'	: igal.titleposition,
+			'titleFormat'		: function(title, currentArray, currentIndex) {
+				if ( typeof igal.htmltitle != 'undefined' && igal.htmltitle !== null && igal.htmltitle !== "" ){
+					// single image
+					title = igal.htmltitle;
+				}
+				else{
+					// slideshow ow gallery where data-attr ist set with the anchor
+					var htmlTitle = $z(igal.root + " .fancybox").eq(currentIndex).data("htmltitle");
+					if ( htmlTitle && htmlTitle != "" ){
+						title = htmlTitle;
+					}
+				}
+				if ( currentArray.length > 1 && igal.numbershow ){
+					if ( igal.lang === "en" ){
+						return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' of ' + currentArray.length + (title ? ": " + title : "") + '</span>';
+					}
+					else{
+						return '<span id="fancybox-title-over">Bild ' +  (currentIndex + 1) + ' von ' + currentArray.length + (title ? ": " + title : "") + '</span>';
+					}
+					
+				}
+				else{
+					return '<span id="fancybox-title-over">' + title + '</span>';
+				}
+			},
+			'onComplete'		: function(){
+				//if user set slideshow = 1 then play slideshow
+				if ( igal.slideshow ){
+					igal.slideshowtimer = setInterval($z.fancybox.next, igal.slideshowinterval);
+				}
+			},
+			'onCleanup'		: function(){
+				//if user set slideshow = 1 then stop slideshow on close of fancybox
+				if ( igal.slideshow ){
+					clearInterval(igal.slideshowtimer);
+				}
+			}
+		});
+			
+		// style the fancybox anchors
+		var head = document.getElementsByTagName('head')[0],
+		style = document.createElement('style'),
+		mystyles = "	" + igal.root + "{overflow: hidden;";
+		if (igal.kind === "singleimageleft"){
+			mystyles += " width: " + igal.width + "; min-height: " + igal.height + "; float: left; margin-right: 20px; margin-bottom: 5px;";
+		}
+		else if (igal.kind === "singleimageright"){
+			mystyles += " width: " + igal.width + "; min-height: " + igal.height + "; float: right; margin-left: 20px; margin-bottom: 5px;";
+		}
+		else if (igal.kind === "singleimagecenter"){
+			mystyles += " width: " + igal.width + "; float: none !important; margin: 0 auto 5px auto;";
+		}
+		else if (igal.kind === "singleimage"){
+			mystyles += " width: " + igal.width + "; float: none !important; margin-bottom: 5px;";
+		}
+		else if (igal.kind === "singleimager"){
+			mystyles += " width: " + igal.width + "; float: none !important; margin: 0 0 5px auto;";
+		}
+		mystyles += "}";
+		mystyles += igal.root + "[data-kind=singleimage] > a { \
+			margin: 0 !important; \
+		}";	
+		mystyles += igal.root + " > a, " + igal.root + " .slide > a { \
+				width: " + igal.width + "; \
+				height: " + igal.height + "; \
+				box-sizing: border-box; \
+				margin: 0 " + igal.marginhor + "px " + igal.margin + "px 0;";
+				
+		if ( igal.bordercolor == "default" ){
+			mystyles += "";
+		}
+		else if ( igal.bordercolor !== "transparent" ){
+			mystyles += "	border: " + igal.borderwidth + "px solid " + igal.bordercolor + "; box-sizing: border-box;";
+		}
+		else{
+			mystyles += "	border: none " + ";";
+		}
+		
+		mystyles += "		padding: 0px; \
+				display: inline-block; \
+				text-align: center; \
+				vertical-align: middle; \
+				overflow: hidden; \
+			}";
+			//we need to switch borders off, since they would possibly be cut off anyway when portrait and landscape imgs are mixed and imgs will be cropped
+			mystyles += igal.root +" > a img { \
+				border: none !important;}";
+							
+		var rules = document.createTextNode(mystyles.replace(/\s+/g,' '));
+		style.type = 'text/css';
+		if(style.styleSheet){
+				style.styleSheet.cssText = rules.nodeValue;
+		}
+		else{
+			style.appendChild(rules);
+		}
+		head.appendChild(style);
+	};
+};
+
+zp.Slideshow = function (){
+	this.root = null;
+	this.slideshowinterval = 5000;
+	this.pauseonhover = true;
+	var sshow = this;
+	
+	this.init = function (elemid){
+		sshow.root = elemid;
+		sshow.slideshowinterval = $z(sshow.root).data("slideshowinterval") * 1000;
+		sshow.pauseonhover = $z(sshow.root).data("pauseonhover")!==0?true:false;
+		// hide all slides except first
+		$z(elemid + ' div.slide:not(:first)').css("opacity", "0");
+		// start the slideshow
+		sshow.slideshow = setInterval( function() { sshow.slideSwitch(elemid); }, sshow.slideshowinterval );
+		// handle swipes
+		$z(sshow.root).on("swipe", function onSwipe(e, Dx, Dy){
+			if ( Dx !== 0 ){  //horizontalSwipe
+				// reset the slider auto play timer
+				clearInterval(sshow.slideshow);
+				sshow.slideshow = setInterval( function() { sshow.slideSwitch(elemid); }, sshow.slideshowinterval );
+			}
+			if ( Dx < 0 ){ // swipeLeft
+				sshow.slideSwitch(elemid, "prev");
+			}
+			else if ( Dx > 0 ){ // swipeRight
+				sshow.slideSwitch(elemid, "next");
+			}
+		});
+		// handle arrow keys
+		$z(sshow.root).hover(function() {
+			if (sshow.pauseonhover){
+				clearInterval(sshow.slideshow);
+			}
+			$z(document).keydown(function(event) {
+				// 37 = left arrow - 39 = right arrow
+				if ( event.which === 37 ){
+					sshow.slideSwitch(elemid, "prev");
+				}
+				else if ( event.which === 39 ){
+					sshow.slideSwitch(elemid, "next");
+				}
+			});
+		}, function() {
+			// unbind the keydown handler on mouseleave
+			 $z(document).unbind("keydown");
+			// restart the slideshow
+			if (sshow.pauseonhover){
+				sshow.slideshow = setInterval( function() { sshow.slideSwitch(elemid); }, sshow.slideshowinterval );
+			}
+		});
+	};
+	
+	this.slideSwitch = function (elemid, direction) {
+		direction = typeof direction !== 'undefined' ? direction : 'next';
+	
+		var $active = $z(elemid + ' div.slide.active');
+		if ( $active.length === 0 ){ $active = $z(elemid + ' div.slide:first');}
+		var $next;
+		if ( direction === "next" ){
+			$next = $active.next(".slide").length ? $active.next(".slide") : $z(elemid + ' div.slide:first');
+		}
+		else if ( direction === "prev" ){
+			$next = $active.prev(".slide").length ? $active.prev(".slide") : $z(elemid + ' div.slide:last');
+		}
+
+		$active.addClass('last-active')
+			.css({"z-index": 101});
+
+		$next.css({"opacity": "0.0"})
+				.addClass('active')
+				.css({"z-index": 102}) 
+				.animate({"opacity": "1.0"}, 500, function() {
+						$active.removeClass('active last-active')
+						.css({"z-index": "100", "opacity": "0"});
+		});
+	};
+};

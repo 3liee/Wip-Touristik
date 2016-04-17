@@ -1,1099 +1,1645 @@
-
-
-
-
-/*
- * Layout: Travel
- * $Id: styles.css 35950 2016-01-25 12:40:45Z sseiz $
+﻿/*
+ * Layout: Travel Responsive by StS
+ * $Id: styles.less 37013 2016-02-19 14:52:35Z sseiz $
  * Copyright Zeta Software GmbH 2014
  */
+
 /***** TAGS *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L16 */
 html {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L19 */
 body {
-	font-family: Verdana;
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
-	color: #0C0C0D;
-	background-color: #FFFFFF;
-	background-image: url(stock-images/noise.png);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 80%;
+  color: #474e58;
+  background-color: #008e20;
+  background-image: url(../assets/stock-images/noise.png);
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L28 */
 h1 {
-	margin: 0px 0 20px 0;
-	padding: 0 0 20px 0;
-	font-size: 18px;
-	font-weight: bold;
-	line-height: normal;
-	text-transform: uppercase;
-	color: #00B552;
-	text-shadow: 1px 1px 1px #FFFFFF;
-	background-image: url(stock-images/contentline.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
+  margin: 0px 0 20px 0;
+  padding: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #008e20;
+  text-shadow: 1px 1px 1px white;
+  background-image: url(../assets/stock-images/contentline.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L41 */
 h2 {
-	margin: 15px 0 15px 0;
-	padding: 0;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: normal;
-	color: #242428;
-	text-shadow: 1px 1px 1px #ffffff;
+  margin: 15px 0 15px 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: normal;
+  color: #008e20;
+  text-shadow: 1px 1px 1px white;
 }
-h3, h4, h5, h6 {
-	margin: 5px 0 5px 0;
-	padding: 0;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: normal;
-	color: #242428;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L50 */
+h3,
+h4,
+h5,
+h6 {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: bolder;
+  line-height: normal;
+  color: #008e20;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L58 */
 p {
-	margin: 0 0 15px 0;
-	padding: 0;
+  margin: 0 0 15px 0;
+  padding: 0;
 }
-ul, ol {
-	margin: 0 0 15px 25px;
-	padding: 0;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L62 */
+ul,
+ol {
+  margin: 0 0 15px 25px;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L66 */
 ul li {
-	margin: 0;
-	padding: 0;
-	list-style: disc;
+  margin: 0;
+  padding: 0;
+  list-style: disc;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L71 */
 ol li {
-	margin: 0;
-	padding: 0;
-	list-style: decimal;
+  margin: 0;
+  padding: 0;
+  list-style: decimal;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L76 */
 table {
-	margin: 0 0 15px 0;
-	padding: 0;
+  margin: 0 0 15px 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L80 */
 td {
-	vertical-align: top;
+  vertical-align: top;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L83 */
 img {
-	margin: 0;
-	padding: 0;
-	border-style: none;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 /***** LINKS *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L91 */
 a {
-	color: #0C0C0D;
-	text-decoration: none;
+  color: #008e20;
+  text-decoration: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L95 */
 a:hover {
-	color: #E3341C;
-	text-decoration: underline;
+  color: #008e20;
+  text-decoration: underline;
 }
 /***** TOP *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L100 */
 #top {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /***** BODYBOX *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L105 */
 #bodybox {
-	margin: 0;
-	padding: 0;
-	min-width: 1080px;
-	background-color: #FEF9C0;
-	background-image: url();
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
 }
 /***** LINE *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L113 */
 #line {
-	margin: 0;
-	padding: 0;
-	background-image: url(stock-images/opacity.png);
-	background-repeat: repeat-x;
+  margin: 0;
+  padding: 0;
+  background-image: url(../assets/stock-images/opacity.png);
+  background-repeat: repeat-x;
 }
 /***** WRAPPER *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L120 */
 #wrapper {
-	margin: 0 auto;
-	padding: 10px 40px 0 40px;
-	width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1000px;
 }
 /***** TOPLINE *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L126 */
 #topline {
-	margin: 0;
-	padding: 20px 10px;
-	min-height: 40px;
-	position: relative;
+  margin: 0;
+  padding: 20px 10px;
+  min-height: 40px;
+  position: relative;
 }
 /***** WEBDESCRIPTION *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L133 */
 #webdescription {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L139 */
 #logo {
-	float: left;
-	margin: 0 20px 0 0;
-	padding: 0px 0 0 0;
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 0px 0 0 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L144 */
 #webtext {
-	float: left;
-	margin: 0;
-	padding: 10px 4px 0 0;
+  float: left;
+  margin: 0;
+  padding: 10px 4px 0 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L149 */
 #webname {
-	font-family: Verdana;
-	margin: 0 0 5px 0;
-	padding: 0;
-	font-size: 22px;
-	font-weight: normal;
-	font-style: normal;
-	text-transform: none;
-	text-shadow: 1px 1px 2px #ffffff;
+  font-family: Georgia, serif;
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 38px;
+  font-weight: bolder;
+  font-style: italic;
+  text-transform: none;
+  text-shadow: 1px 1px 2px white;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L159 */
 #webname a {
-	color: #00B552;
-	text-decoration: none;
+  color: #008e20;
+  text-decoration: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L163 */
 #slogan {
-	margin: 0;
-	padding: 0;
-	font-size: 22px;
-	font-weight: normal;
-	color: #00B552;
-	text-transform: none;
-	text-shadow: 1px 1px 1px #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: bolder;
+  color: #5e6774;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px white;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L173 */
+a#mobilenavtoggle {
+  margin-top: 10px;
+  display: none;
+  float: right;
+  font-size: 1em;
+  padding: 5px 8px 4px 8px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  border: 1px solid #008e20;
+  background-color: #008e20;
+  color: #fafafa;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L188 */
+a#mobilenavtoggle:hover {
+  text-decoration: underline;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L191 */
+#searchwrap {
+  position: relative;
+  float: right;
 }
 /***** EXTRAMENU *****/
-#xmenu, #xmenuright {
-	margin: 0;
-	padding: 0;
-	position: absolute !important;
-	top: 48px;
-	right: 230px;
-}
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L196 */
+#xmenu,
 #xmenuright {
-	right: 0;
+  float: left;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  margin-top: 24px;
 }
-#xmenu span, #xmenuright span {
-	display: block;
-	float: left;
-	margin: 0;
-	padding: 2px 0;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L203 */
+#xmenuright {
+  margin-right: 0;
 }
-#xmenu span.row-separator, #xmenuright span.row-separator {
-	width: 2px;
-	background-image: url(stock-images/menuline.png);
-	background-repeat: repeat-y;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L206 */
+#xmenu span,
+#xmenuright span {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 2px 0;
 }
-#xmenu a, #xmenuright a {
-	margin: 0;
-	padding: 0 10px;
-	font-size: 14px;
-	font-weight: normal;
-	color: #242428;
-	text-transform: uppercase;
-	text-shadow: 1px 1px 1px #FFFFFF;
-	text-decoration: underline;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L212 */
+#xmenu span.row-separator,
+#xmenuright span.row-separator {
+  width: 2px;
+  background-image: url(../assets/stock-images/menuline.png);
+  background-repeat: repeat-y;
 }
-#xmenu a:hover, #xmenuright a:hover {
-	color: #0C0C0D;
-	text-decoration: none;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L217 */
+#xmenu a,
+#xmenuright a {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 1em;
+  font-weight: bolder;
+  color: #5e6774;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px white;
+  text-decoration: none;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L227 */
+#xmenu a:hover,
+#xmenuright a:hover {
+  color: #474e58;
+  text-decoration: none;
 }
 /***** SEARCH *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L232 */
 #search {
-	margin: 0;
-	padding: 0;
-	position: absolute !important;
-	top: 44px;
-	right: 10px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L238 */
 #searchform {
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	height: 23px;
-	position: relative;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 23px;
+  position: relative;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L245 */
 #searchform input {
-	font-family: Verdana;
+  font-family: Arial, Helvetica, sans-serif;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L248 */
 #searchfieldset {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L253 */
 #searchfield {
-	margin: 0;
-	padding: 0 5px 0 23px;
-	width: 102px;
-	height: 23px;
-	border: 0;
-	font-size: 14px;
-	color: #0C0C0D;
-	background-color: #FFFFFF;
-	background-image: url(../assets/stock-images/magnifier.png);
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 0;
-	left: 0;
-	-moz-border-radius-topleft: 3px;
-	-moz-border-radius-topright: 0px;
-	-moz-border-radius-bottomright: 0px;
-	-moz-border-radius-bottomleft: 3px;
-	-webkit-border-radius: 3px 0px 0px 3px;
-	border-radius: 3px 0px 0px 3px;
-	-webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0 5px 0 23px;
+  width: 102px;
+  height: 23px;
+  border: 0;
+  font-size: 1em;
+  color: #474e58;
+  background-color: #fafafa;
+  background-image: url(../assets/stock-images/magnifier.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px 0px 0px 3px;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L272 */
 #searchbutton {
-	margin: 0;
-	padding: 0;
-	width: 70px;
-	height: 23px;
-	border: 0;
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #0C0C0D;
-	background-color: #FFFFFF;
-	background-image: url(stock-images/noise.png);
-	position: absolute;
-	top: 0;
-	right: 0;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 3px;
-	-moz-border-radius-bottomright: 3px;
-	-moz-border-radius-bottomleft: 0px;
-	-webkit-border-radius: 0px 3px 3px 0px;
-	border-radius: 0px 3px 3px 0px;
-	-webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 23px;
+  border: 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fafafa;
+  background-color: #008e20;
+  background-image: url(../assets/stock-images/noise.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 3px 3px 0px;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L290 */
 #searchbutton:hover {
-	cursor: pointer;
-	color: #0C0C0D;
-	background-color: #FFFFFF;
+  cursor: pointer;
+  color: #e1e1e1;
+  background-color: #00c12b;
 }
 /***** FRAMEBOX *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L296 */
 #framebox {
-	margin: 0;
-	padding: 10px 10px 0 10px;
-	background-image: url(stock-images/opacity.png);
-	position: relative;
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  background-image: url(../assets/stock-images/opacity.png);
 }
 /***** NAVBAR *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L302 */
 #navbar {
-	margin: 0;
-	padding: 0 10px;
-	width: 960px;
-	height: 45px;
-	background-color: #F8CA07;
-	background-image: url(stock-images/noise.png);
-	position: relative;
-	z-index: 999;
+  margin: 0;
+  padding: 0 10px;
+  max-width: 960px;
+  height: 45px;
+  background-color: #008e20;
+  background-image: url(../assets/stock-images/noise.png);
 }
 /***** MAINMENU *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L311 */
 ul.mainmenu {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 6001;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L317 */
 ul.mainmenu li {
-	float: left;
-	margin: 0;
-	padding: 0 15px 0 0;
-	list-style: none;
-	position: relative;
-	background-color: transparent;
+  list-style: none;
+  position: relative;
 }
-ul.mainmenu li.row-separator, ul.mainmenu li.row-separator:hover {
-	padding: 0;
-	width: 2px;
-	height: 45px;
-	background-image: url(stock-images/menuline.png);
-	background-repeat: repeat-y;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L321 */
+ul.mainmenu > li {
+  float: left;
+  margin: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
-ul.mainmenu li.row-separator:hover {
-	background-color: transparent;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L327 */
+ul.mainmenu > li.haschilds > a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/stock-images/arrow.png) no-repeat right;
 }
-ul.mainmenu li:hover, ul.mainmenu li.topmenuactive {
-	background-color: #FEF9C0;
-	background-image: url(stock-images/noise.png);
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L336 */
+ul.mainmenu > li.haschilds > a {
+  position: relative;
+  padding: 15px 30px 0 15px;
 }
-ul.mainmenu li.topmenuactive {
-	background-color: #FEF9C0;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L341 */
+ul.mainmenu > li:first-child {
+  border-left: 0;
 }
-ul.mainmenu li:hover a {
-	color: #00B552;
-}
-ul.mainmenu li.topmenuactive:hover a, ul.mainmenu li.topmenuactive a {
-	color: #00B552;
-}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L344 */
 ul.mainmenu li a {
-	display: block;
-	margin: 0;
-	padding: 15px 15px 0 30px;
-	height: 30px;
-	font-size: 12px;
-	font-weight: bold;
-	color: #00B552;
-	text-decoration: none;
-	text-transform: uppercase;
-	white-space: nowrap;
-	text-shadow: 1px 1px 1px transparent;
+  display: block;
+  margin: 0;
+  padding: 15px 15px 0 15px;
+  height: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fafafa;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 1px 1px 1px #002809;
 }
-ul.mainmenu li a.sf-with-ul {
-	background: url(../assets/stock-images/arrow.png) no-repeat right;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L358 */
+.notouch ul.mainmenu > li > a:hover,
+ul.mainmenu > li.active:not(.open) > a {
+  color: #e1e1e1;
+  background-color: #005b15;
+  background-image: url(../assets/stock-images/noise.png);
 }
-.sf-sub-indicator {
-	display: none;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L363 */
+.notouch ul.mainmenu > li.active:not(.open) > a:hover,
+ul.mainmenu > li.active:not(.open) > a {
+  color: #e1e1e1;
+  background-color: #005b15;
 }
 /***** DROPDOWN *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L370 */
+.dropdown-submenu > a:after {
+  content: "›";
+  color: inherit;
+  margin-left: 8px;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L375 */
+ul.mainmenu > li > ul {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L378 */
 ul.mainmenu ul {
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: -99999px;
-	left: 0;
-	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  background-color: #008e20;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L386 */
+ul.mainmenu ul ul {
+  top: 0;
+  left: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L392 */
 ul.mainmenu ul li {
-	float: none;
-	padding: 1px;
-	background-color: transparent !important;
-	background-image: url(stock-images/opacity.png) !important;
+  position: relative;
+  float: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-ul.mainmenu ul span.row-separator, ul.mainmenu ul span.row-separator:hover {
-	display: block;
-	margin: 0;
-	padding: 0;
-	height: 2px;
-	background-color: #FFFFFF;
-	background-image: url(stock-images/dropline.png);
-	background-repeat: repeat-x;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L397 */
+ul.mainmenu ul li a {
+  padding: 8px 30px;
+  height: auto;
+  font-size: 1em;
+  color: #fafafa;
+  background-color: #008e20;
+  text-shadow: 1px 1px 1px #002809;
 }
-ul.mainmenu ul li span {
-	display: block;
-	margin: 0;
-	padding: 0;
-	background-color: #FFFFFF;
-	background-image: url(stock-images/noise.png);
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L405 */
+.notouch ul.mainmenu ul li a:hover {
+  color: #fafafa;
+  background-color: #005b15;
 }
-ul.mainmenu ul li span:hover {
-	background-color: #FFFFFF;
-}
-ul.mainmenu ul li span.dropdownactive {
-	background-color: #FFFFFF;
-}
-ul.mainmenu ul li span a {
-	padding: 8px 30px;
-	height: auto;
-	font-size: 14px;
-	color: #242428 !important;
-	text-shadow: 1px 1px 1px #FFFFFF !important;
-}
-ul.mainmenu ul li span:hover a {
-	color: #00B552 !important;
-}
-ul.mainmenu ul li span.dropdownactive a {
-	color: #0C0C0D !important;
-}
-ul.mainmenu li:hover ul, ul.mainmenu li.sfHover ul {
-	top: 45px;
-	left: -1px;
-	z-index: 299;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L409 */
+ul.mainmenu ul li.active:not(.open) a {
+  color: #e1e1e1;
+  background-color: #005b15;
 }
 /***** SUBNAV1 *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L415 */
 ul.submenu {
-	margin: 0 0 20px 0;
-	padding: 0;
+  margin: 0 0 20px 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L419 */
 ul.submenu li {
-	margin: 0;
-	padding: 10px 0 12px 0;
-	list-style: none;
-	background-image: url(stock-images/contentline.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
+  margin: 0;
+  padding: 10px 0 12px 0;
+  list-style: none;
+  background-image: url(../assets/stock-images/contentline.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L427 */
 ul.submenu li a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-	color: #0C0C0D;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px transparent !important;
-	white-space: nowrap;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #008e20;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white !important;
+  white-space: nowrap;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L437 */
 ul.submenu li a:hover {
-	color: #0C0C0D;
-	text-decoration: underline;
+  color: #008e20;
+  text-decoration: underline;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L441 */
 ul.submenu li a.subnav1active {
-	font-weight: bold;
-	color: #00B552;
-	text-decoration: none;
+  font-weight: bolder;
+  color: #00c12b;
+  text-decoration: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L446 */
 ul.submenu li a.subnav1active:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L449 */
 ul.submenu li span {
-	display: block;
-	float: left;
-	padding: 0 8px 0 0;
-	line-height: 13px;
-	font-size: 16px;
-	color: #242428;
-	text-transform: uppercase;
-	text-shadow: 1px 1px 1px #ffffff;
+  display: block;
+  float: left;
+  padding: 0 8px 0 0;
+  line-height: 13px;
+  font-size: 16px;
+  color: #008e20;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px white;
 }
 /***** SUBNAV2 *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L460 */
 ul.submenu ul {
-	margin: 0;
-	padding: 5px 0 10px 13px;
+  margin: 0;
+  padding: 5px 0 10px 13px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L464 */
 ul.submenu ul li {
-	padding: 0 0 5px 0;
-	background-image: none;
+  padding: 0 0 5px 0;
+  background-image: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L468 */
 ul.submenu ul li a {
-	font-size: 16px;
-	color: #E3341C;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #ffffff !important;
+  font-size: 1em;
+  color: #008e20;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L474 */
 ul.submenu ul li a:hover {
-	color: #E3341C;
-	text-decoration: underline;
+  color: #008e20;
+  text-decoration: underline;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L478 */
 ul.submenu ul li a.subnav2active {
-	font-weight: normal;
-	color: #e95d49;
-	text-decoration: none;
+  font-weight: normal;
+  color: #00c12b;
+  text-decoration: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L483 */
 ul.submenu ul li a.subnav2active:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 /***** RADIUS *****/
-#navbar, #framebox, .newsbox h2 {
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	-webkit-border-radius: 5px 5px 0px 0px;
-	border-radius: 5px 5px 0px 0px;
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L487 */
+#navbar,
+#framebox,
+.newsbox h2 {
+  border-radius: 5px 5px 0px 0px;
+  background-clip: padding-box;
 }
 /***** INSET SHADOW *****/
-ul.mainmenu li.topmenuactive, ul.mainmenu ul li span.dropdownactive, .newsbox h2, #contentbox a.button span, input.button {
-	-webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L491 */
+ul.mainmenu li.topmenuactive,
+ul.mainmenu ul li span.dropdownactive,
+.newsbox h2,
+#contentbox a.button span,
+input.button {
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 /***** FLEXSLIDER *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L495 */
 .flexslider {
-	margin: 0 !important;
-	border: 0 !important;
-	-webkit-border-radius: 0px !important;
-	-moz-border-radius: 0px !important;
-	-o-border-radius: 0px !important;
-	border-radius: 0px !important;
-	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
-	-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
-	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
-	-o-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 0px 0px 0px transparent;
+  box-shadow: 0px 0px 0px 0px transparent;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L501 */
 .flexslider ul.slides li {
-	position: relative;
-	list-style: none;
+  position: relative;
+  list-style: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L505 */
 .flex-caption {
-	width: 980px;
-	padding: 20px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	font-size: 12px;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.5);
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 1em;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
-.flex-caption h1, .flex-caption h2, .flex-caption h3 {
-	margin: 0 0 5px 0;
-	padding: 0;
-	font-size: 12px;
-	font-weight: bold;
-	color: #ffffff;
-	text-shadow: 0px 0px 0px transparent;
-	text-transform: none;
-	background-image: none;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L517 */
+.flex-caption h1,
+.flex-caption h2,
+.flex-caption h3 {
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 0px transparent;
+  text-transform: none;
+  background-image: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L527 */
 .flex-caption p {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L531 */
 .flex-caption a {
-	color: #ffffff;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L535 */
 .flex-caption a:hover {
-	color: #ffffff;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L539 */
 .flex-direction-nav li {
-	list-style: none !important;
+  list-style: none !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L542 */
+.flexslider:hover .flex-next,
+.flexslider:hover .next {
+  opacity: 0.8;
+  right: 18px;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L543 */
+.flexslider:hover .flex-prev,
+.flexslider:hover .prev {
+  opacity: 0.8;
+  left: 18px;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L545 */
 .flex-control-nav {
-	right: 6px !important;
-	bottom: 6px !important;
-	text-align: right !important;
-	overflow: hidden !important;
+  right: 20px !important;
+  bottom: 18px;
+  text-align: right !important;
+  overflow: hidden !important;
+  width: auto;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L552 */
 .flex-control-nav li {
-	margin: 0 3px !important;
+  margin: 0 3px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L555 */
+.flex-control-nav li a,
 .flex-control-paging li a {
-	background: #ffffff  !important;
-	background: rgba(255, 255, 255, 0.5) !important;
-	text-indent: 9999px !important;
+  border: 0;
+  background-color: #c1cbcf;
+  color: transparent;
+  cursor: pointer;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L562 */
+.flex-control-nav li a:hover,
+.flex-control-paging li a:hover {
+  border: 0;
+  background: #96d617;
+  background: rgba(150, 214, 23, 0.7);
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L568 */
+.flex-control-nav li a.flex-active,
 .flex-control-paging li a.flex-active {
-	background: #ffffff !important;
-	background: rgba(255, 255, 255, 0.9) !important;
+  border: 0;
+  background: #96d617;
+  background: rgba(150, 214, 23, 0.9);
 }
 /***** WEBBOX *****/
-#webbox, #webboxplus {
-	margin: 0;
-	padding: 20px 20px 40px 20px;
-	background-color: #FFFFFF;
-	background-image: url();
-	position: relative;
-	z-index: 98;
-}
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L576 */
+#webbox,
 #webboxplus {
-	padding: 40px 20px 40px 20px;
+  margin: 0;
+  padding: 20px;
+  background-color: #fafafa;
+  position: relative;
+  z-index: 98;
 }
 /***** BREADCRUMB *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L585 */
 #breadcrumb {
-	margin: 0 0 40px 0;
-	padding: 0 20px 0 0;
-	font-size: 12px;
-	color: #0C0C0D;
+  margin: 0 0 40px 0;
+  padding: 0 20px 0 0;
+  font-size: 1em;
+  color: #474e58;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L591 */
 #breadcrumb a {
-	padding: 0 5px;
-	color: #E3341C;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #ffffff;
+  padding: 0 5px;
+  color: #008e20;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L597 */
 #breadcrumb a:hover {
-	color: #E3341C;
-	text-decoration: underline;
+  color: #008e20;
+  text-decoration: underline;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L601 */
 #breadcrumb span {
-	font-size: 16px;
-	color: #0C0C0D;
-	text-transform: uppercase;
-	text-shadow: 1px 1px 1px #ffffff;
+  font-size: 16px;
+  color: #5e6774;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px white;
 }
 /***** CONTENTBOX *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L608 */
 #contentbox {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L612 */
 #contentbox a {
-	text-shadow: 1px 1px 1px #ffffff;
+  text-shadow: 1px 1px 1px white;
 }
-#contentbox input[type="text"], #contentbox textarea {
-	font-family: Verdana;
-	font-size: 18px;
-	color: #0C0C0D;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L615 */
+#contentbox input[type="text"],
+#contentbox textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #474e58;
 }
 /***** BUTTON *****/
-#contentbox a.button, input.button {
-	display: inline-block;
-	margin: 0 15px 0 0;
-	padding: 0;
-	font-size: 16px;
-	font-weight: bold;
-	text-decoration: none;
-	line-height: normal;
-	color: #e0e2e5;
-	text-shadow: 1px 1px 1px #0c0c0d !important;
-	background-color: #242428;
-	background-image: url(stock-images/noise.png);
-	-moz-border-radius-topleft: 3px;
-	-moz-border-radius-topright: 3px;
-	-moz-border-radius-bottomright: 3px;
-	-moz-border-radius-bottomleft: 3px;
-	-webkit-border-radius: 3px 3px 3px 3px;
-	border-radius: 3px 3px 3px 3px;
-	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L621 */
+#contentbox a.button,
+input.button {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
+  line-height: normal;
+  color: #e0e2e5;
+  text-shadow: 1px 1px 1px #005b15 !important;
+  background-color: #008e20;
+  background-image: url(../assets/stock-images/noise.png);
+  border-radius: 3px 3px 3px 3px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
-#contentbox #sidebarright a.button, #contentbox #sidebarleft a.button, input.button {
-	margin: 0 10px 0px 0;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L636 */
+#contentbox #sidebarright a.button,
+#contentbox #sidebarleft a.button,
+input.button {
+  margin: 0 10px 0px 0;
 }
-#contentbox a.button:hover, input.button:hover {
-	color: #0C0C0D;
-	background-color: #FFFFFF;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L639 */
+#contentbox a.button:hover,
+input.button:hover {
+  color: white;
+  background-color: #005b15;
 }
-#contentbox a.button span, input.button {
-	display: block;
-	margin: 0;
-	padding: 5px 10px;
-	-moz-border-radius-topleft: 3px;
-	-moz-border-radius-topright: 3px;
-	-moz-border-radius-bottomright: 3px;
-	-moz-border-radius-bottomleft: 3px;
-	-webkit-border-radius: 3px 3px 3px 3px;
-	border-radius: 3px 3px 3px 3px;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L643 */
+#contentbox a.button span,
+input.button {
+  display: block;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 3px 3px 3px 3px;
+  background-clip: padding-box;
 }
 /***** CONTENT *****/
-#floatcontentleft, #floatcontentright {
-	float: left;
-	margin: 0 20px 0 0;
-	padding: 0;
-	width: 690px;
-	line-height: 16px;
-}
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L650 */
+#floatcontentleft,
 #floatcontentright {
-	float: right;
-    margin: 0 0 0 20px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 74%;
+  font-size: 1em;
+  line-height: 1.4;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L658 */
+#floatcontentright {
+  float: right;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L661 */
 #content {
-	margin: 0;
-	padding: 0;
-	line-height: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.4;
 }
-#floatcontentleft.boxshadow img, #floatcontentright.boxshadow img, #content.boxshadow img {
-	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L667 */
+#floatcontentleft.boxshadow img,
+#floatcontentright.boxshadow img,
+#content.boxshadow img {
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 /***** SIDEBAR *****/
-#sidebarright, #sidebarleft {
-	float: right;
-	margin: 0;
-	padding: 0 0 0 20px;
-	width: 210px;
-	overflow: hidden;
-}
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L671 */
+#sidebarright,
 #sidebarleft {
-	float: left;
-	padding: 0 20px 0 0;
+  margin: 0;
+  padding: 0 0 0 20px;
+  max-width: 230px;
+  overflow: hidden;
 }
-#sidebarright.boxshadow img, #sidebarleft.boxshadow img {
-	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L677 */
+#sidebarleft {
+  padding: 0 20px 0 0;
 }
-.zpWeatherWidget img{
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	box-shadow: none !important;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L680 */
+#sidebarright.boxshadow img,
+#sidebarleft.boxshadow img {
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L683 */
+.zpWeatherWidget img {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/***** CSS FOR COLUMNS.HTML *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L688 */
+#arealeft,
+#arearight {
+  float: left;
+  width: 66%;
+  overflow: hidden;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L693 */
+#arearight {
+  float: right;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L696 */
+#newsleft,
+#newsright {
+  float: left;
+  width: 34%;
+  padding: 0 20px 0 0;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L704 */
+#newsright {
+  float: right;
+  padding: 0 0 0 20px;
 }
 /***** NEWS *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L709 */
 .news {
-	margin: 0 0 0px 0;
-	line-height: 21px;
+  margin: 0 0 0px 0;
+  line-height: 1.4;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L713 */
 .news .articlearea {
-	padding: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L716 */
 .news .newsbox {
-	padding: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L719 */
 .news h2 {
-	margin: 0;
-	padding: 5px 10px;
-	font-size: 16px;
-	font-weight: bold;
-	color: #0C0C0D;
-	text-shadow: 1px 1px 1px transparent;
-	background-color: #242428;
-	background-image: url(stock-images/noise.png);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: bolder;
+  color: #fafafa;
+  text-shadow: 1px 1px 1px transparent;
+  background-color: #008e20;
+  background-image: url(../assets/stock-images/noise.png);
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L729 */
 .newstext {
-	margin: 0;
-	padding: 10px;
-	font-size: 12px;
-	color: #0C0C0D;
-	background-color: #f1f2f3;
-	background-image: url(../assets/bluehendes-barock-006.jpg);
-	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 10px;
+  font-size: 1em;
+  color: #474e58;
+  background-color: #f1f2f3;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L738 */
 .newstext p {
-	margin: 0 0 15px 0;
+  margin: 0 0 15px 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L741 */
 .newstext a {
-	color: #E3341C;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #ffffff !important;
+  color: #008e20;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L746 */
 .newstext a:hover {
-	color: #E3341C;
-	text-decoration: underline;
+  color: #008e20;
+  text-decoration: underline;
 }
 /***** ARTICLES *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L751 */
 .articlearea {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L755 */
 .articleimage {
-	margin: 0;
-	padding: 4px 0 0 0;
+  margin: 0;
+  padding: 4px 0 0 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L759 */
 .articletext {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L763 */
 .twocolumnleft {
-	float: left;
-	margin: 0;
-	padding: 0;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L768 */
 .twocolumnleft > div {
-	margin: 0;
-	padding: 0 12px 0 0;
+  margin: 0;
+  padding: 0 12px 0 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L772 */
 .twocolumnright {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L777 */
 .twocolumnright > div {
-	margin: 0;
-	padding: 0 0 0 12px;
+  margin: 0;
+  padding: 0 0 0 12px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L781 */
 .bildunterschrift {
-	display: block;
-	color: #0C0C0D;
+  display: block;
+  color: #474e58;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L785 */
 .floatarticle {
-	float: left;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  float: left;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L791 */
 .floatarticle > div {
-	margin: 0;
-	padding: 0 20px 0 0;
+  margin: 0;
+  padding: 0 20px 0 0;
 }
 /***** FORM *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L796 */
 .zp-form {
-	display: inline-block;
-	margin: 0;
-	padding: 0 0 10px 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 10px 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L801 */
 .zp-form p {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L805 */
 .zp-form table {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L809 */
 .zp-form td {
-	margin: 0;
-	padding: 0;
-	white-space: nowrap;
-	vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  vertical-align: middle;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L815 */
 .zp-form input.button {
-	padding: 5px 10px;
-	border: 0;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+  padding: 5px 10px;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-.zp-form input[type="text"], .zp-form input[type="number"], .zp-form input[type="email"], .zp-form input[type="tel"], .zp-form input[type="url"], .zp-form input[type="date"], .zp-form input[type="time"], .zp-form input[type="color"], .zp-form input[type="search"], .zp-form textarea, .zp-form select {
-	font-family: Verdana;
-	font-size: 18px;
-	color: #0C0C0D;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L821 */
+.zp-form input[type="text"],
+.zp-form input[type="number"],
+.zp-form input[type="email"],
+.zp-form input[type="tel"],
+.zp-form input[type="url"],
+.zp-form input[type="date"],
+.zp-form input[type="time"],
+.zp-form input[type="color"],
+.zp-form input[type="search"],
+.zp-form textarea,
+.zp-form select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #474e58;
 }
-.zp-form .label, .zp-form .field {
-	padding: 3px 10px 3px 0;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L826 */
+.zp-form .label,
+.zp-form .field {
+  padding: 3px 10px 3px 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L829 */
 .zp-form .desc {
-	padding: 10px 10px 10px 0;
+  padding: 10px 10px 10px 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L832 */
 .zp-form .multiline {
-	padding: 4px 10px 0 0;
-	vertical-align: top;
+  padding: 4px 10px 0 0;
+  vertical-align: top;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L836 */
 .zp-form .submit {
-	padding: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L839 */
 .zp-form .separator {
-	margin: 10px 10px 10px 0;
-	padding: 0;
-	line-height: 1px;
-	height: 1px;
-	border-bottom: 1px solid #0C0C0D;
+  margin: 10px 10px 10px 0;
+  padding: 0;
+  line-height: 1px;
+  height: 1px;
+  border-bottom: 1px solid #474e58;
 }
 /***** TEASER *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L847 */
 #banner {
-	margin: 0;
-	padding: 20px 10px;
-	font-size: 16px;
-	color: #0C0C0D;
-	line-height: 16px;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 1em;
+  color: #474e58;
+  line-height: 1.4;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L853 */
+#banner h1,
+#banner h2,
+#banner h3,
+#banner h4,
+#banner h5,
+#banner h6 {
+  color: #474e58;
+  text-shadow: none;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L858 */
 #afterfooter {
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
-	line-height: 16px;
-	min-width: 1080px;
-	color: #ffffff;
-	background-color: #242428;
-	background-image: url(stock-images/noise.png);
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  color: white;
+  background-color: #008e20;
+  background-image: url(../assets/stock-images/noise.png);
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L866 */
+#afterfooter h1,
+#afterfooter h2,
+#afterfooter h3,
+#afterfooter h4,
+#afterfooter h5,
+#afterfooter h6 {
+  color: white;
+  text-shadow: none;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L871 */
 #afterfooter .footerline {
-	margin: 0;
-	padding: 0;
-	background-image: url(stock-images/dropline.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
+  margin: 0;
+  padding: 0;
+  background-image: url(../assets/stock-images/dropline.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L878 */
 #afterfooter .wrapper {
-	margin: 0 auto;
-	padding: 20px 50px;
-	width: 980px;
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 980px;
+  max-width: 1000px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L884 */
 #afterfooter .wrapper a {
-	color: #ffffff;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L888 */
 #afterfooter .wrapper a:hover {
-	color: #ffffff;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
-#banner span:not([style]), #afterfooter .wrapper span {
-	display: block;
-	margin: 0 0 5px 0;
-	padding: 0;
-	font-weight: bold;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L892 */
+#banner span:not([style]),
+#afterfooter .wrapper span {
+  display: block;
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-weight: bold;
 }
-#banner p, #afterfooter .wrapper p {
-	margin: 0;
-	padding: 0;
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L898 */
+#banner p,
+#afterfooter .wrapper p {
+  margin: 0;
+  padding: 0;
 }
 /***** FOOTER *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L903 */
 #footer {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L907 */
 #bottomfooter {
-	margin: 0;
-	padding: 0;
-	color: #0C0C0D;
-	font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 1em;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L913 */
 #bottomfooter .wrapper {
-	margin: 0 auto;
-	padding: 20px 40px;
-	width: 1000px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  max-width: 1000px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L918 */
 #bottomfooter .wrapper a {
-	color: #ffffff;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L922 */
 #bottomfooter .wrapper a:hover {
-	color: #ffffff;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L926 */
 #footermenu {
-	margin: 0 0 5px 0;
-	padding: 0;
+  margin: 0 0 5px 0;
+  padding: 0;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L930 */
 #footermenu span.row-separator {
-	width: 2px;
-	background-image: url(stock-images/menuline.png);
-	background-repeat: repeat-y;
+  width: 2px;
+  background-image: url(../assets/stock-images/menuline.png);
+  background-repeat: repeat-y;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L935 */
 #footermenu a {
-	padding: 0 10px;
+  padding: 0 10px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L938 */
 #footerinfo {
-	margin: 0;
-	padding: 0 10px;
+  margin: 0;
+  padding: 0;
 }
 /***** ONLINESHOP *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L943 */
 .zpSO-OnlineShop-table {
-	width: 100%;
+  width: 100%;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L946 */
 .zpSO-OnlineShop-table th {
-	margin: 0;
-	padding: 5px 10px;
-	font-weight: bold;
-	text-align: left;
-	color: #00B552;
-	background-color: #F8CA07;
+  margin: 0;
+  padding: 5px 10px;
+  font-weight: bold;
+  text-align: left;
+  color: #fafafa;
+  background-color: #008e20;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L954 */
 .zpSO-OnlineShop-table td {
-	margin: 0;
-	padding: 5px 10px;
-	text-align: left;
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left;
 }
-.zpSO-OnlineShop-row1 td, .zpSO-OnlineShop-row2 td {
-	margin: 0;
-	padding: 5px 10px;
-	text-align: left;
-}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L959 */
+.zpSO-OnlineShop-row1 td,
 .zpSO-OnlineShop-row2 td {
-	background-image: url(stock-images/opacity.png);
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left;
+}
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L964 */
+.zpSO-OnlineShop-row2 td {
+  background-image: url(../assets/stock-images/opacity.png);
 }
 /***** ZP *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L968 */
 .zp {
-	color: #0C0C0D !important;
-	text-decoration: none !important;
+  color: white !important;
+  text-decoration: none !important;
 }
 /***** CLEAR *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L973 */
 .clear {
-	clear: both;
+  clear: both;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L976 */
 .clearx {
-	clear: both;
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-	height: 0;
-	line-height: 0;
-	visibility: hidden;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
 }
 /***** FORM ANTI SPAM *****/
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L986 */
 .asfield {
-	display: none;
+  display: none;
 }
-
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L990 */
 div.zpRow.news {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
+/* Responsive Breakpoints */
 
+@media only screen and (max-width: 768px) {
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L998 */
+  #webdescription {
+    position: relative;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1001 */
+  #webname {
+    font-size: 28.5px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1004 */
+  a#mobilenavtoggle {
+    display: block;
+    z-index: 110;
+    position: relative;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1009 */
+  a#mobilenavtoggle.on {
+    -webkit-transition: border 500ms;
+    transition: border 500ms;
+    border: 1px solid #fafafa;
+    position: fixed;
+    right: 50px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1015 */
+  #searchwrap {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1020 */
+  #search {
+    float: right;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1023 */
+  #navbar {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 68px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0;
+    background-clip: padding-box;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1036 */
+  #navbar.on {
+    display: block;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1039 */
+  ul.mainmenu > li {
+    border-left: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1042 */
+  ul.mainmenu > li > a {
+    padding: 8px 30px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1045 */
+  ul.mainmenu ul li a {
+    background-color: transparent;
+    color: #fafafa;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1049 */
+  ul.mainmenu ul {
+    display: block;
+    visibility: visible;
+    position: relative;
+    top: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-left: 1.5em;
+    background-color: transparent;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1058 */
+  ul.mainmenu ul ul {
+    top: 0;
+    left: auto;
+    border-left: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1063 */
+  ul.mainmenu li li li {
+    border-bottom: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1066 */
+  .notouch ul.mainmenu li:hover ul {
+    top: auto !important;
+    left: auto !important;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1070 */
+  ul.mainmenu li {
+    float: none;
+    display: block;
+    margin: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1074 */
+  ul.mainmenu li a {
+    height: auto;
+  }
+  /* hide menu level 2 and plus which should only show onClick() */
+  
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1080 */
+  li:not(.active) > .dropdown-menu,
+  ul.mainmenu li:not(.active) > .dropdown-menu,
+  .notouch ul.mainmenu > li:not(.active):hover > ul.dropdown-menu {
+    display: none;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1085 */
+  ul.mainmenu li.haschilds > a {
+    position: relative;
+    padding: 8px 3.5em 8px 8px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1089 */
+  ul.mainmenu li.haschilds > a:after {
+    content: '';
+    box-sizing: content-box;
+    position: absolute;
+    top: 47%;
+    margin-top: -0.25em;
+    right: 11px;
+    height: 0.5em;
+    width: 0.5em;
+    background: transparent;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    display: block;
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1107 */
+  ul.mainmenu li.haschilds.open > a:after,
+  ul.mainmenu li.haschilds.clicked > a:after {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-top: -0.5em;
+    right: 15px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1114 */
+  #arealeft,
+  #arearight {
+    float: none;
+    width: auto;
+    padding: 0 20px 0 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1119 */
+  #newsleft,
+  #newsright {
+    float: none;
+    width: auto;
+    padding: 0 20px 0 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1127 */
+  .notouch ul.mainmenu li:hover > ul {
+    display: block;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1130 */
+  .notouch ul.mainmenu > li:hover > ul {
+    display: block;
+    top: 45px;
+    left: -1px;
+    z-index: 299;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* remove news column */
+  
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1140 */
+  #floatcontentleft,
+  #floatcontentright,
+  #sidebarright,
+  #sidebarleft {
+    display: block;
+    width: 100%;
+    max-width: none;
+    float: none;
+    padding: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1150 */
+  .flex-caption {
+    position: relative;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1153 */
+  .flex-control-nav {
+    bottom: 18px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1156 */
+  #webbox,
+  #webboxplus {
+    padding-right: 20px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1160 */
+  .articlearea {
+    padding: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1162 */
+  .articlearea div.articleimage {
+    float: none !important;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 580px) {
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1171 */
+  #wrapper {
+    padding: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1174 */
+  #framebox {
+    border-radius: 0;
+    background-clip: padding-box;
+    padding: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1178 */
+  a#mobilenavtoggle.on {
+    right: 10px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1181 */
+  #navbar {
+    padding-top: 64px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1184 */
+  #webdescription {
+    max-width: 75%;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1187 */
+  #xmenu a,
+  #xmenuright a {
+    padding: 0 2px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1190 */
+  #search {
+    float: left;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1193 */
+  ul.mainmenu > li > a,
+  ul.mainmenu ul li a {
+    padding: 8px;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1197 */
+  #afterfooter .wrapper,
+  #bottomfooter .wrapper {
+    padding: 20px;
+  }
+}
 /*** CSS for Print ***/
+
 @media print {
-	body {
-		font-family: Arial, sans-serif;
-		font-size: 12pt;
-		color: #000000;
-		background-color: #ffffff;
-	}
-	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
-		page-break-after: avoid;
-		font-size: 21pt;
-	}
-	h1 {
-		page-break-before: always;
-	}
-	h2 {
-		font-size: 16pt;
-	}
-	h3, h4, h5, h6 {
-		font-size: 12pt;
-	}
-	ul, ol {
-		page-break-inside: avoid;
-	}
-	img {
-		page-break-inside: avoid;
-		max-width: 75%;
-	}
-	/* Links */
-	a, a:hover {
-		color: #000000;
-		text-decoration: none;
-	}
-	/* Wrapper */
-	#wrapper {
-		margin: 0;
-		padding: 0;
-		width: auto;
-	}
-	/* Framebox */
-	#framebox {
-		padding: 0;
-		background-image: none;
-	}
-	/* Content */
-	#floatcontentleft, #floatcontentright {
-		float: none;
-		width: auto;
-		line-height: normal;
-	}
-	#content {
-		line-height: normal;
-	}
-	/* Articles */
-	.bildunterschrift {
-		color: #000000;
-	}
-	/* Display None */
-	#banner, #topline, #navbar, .flexslider, #breadcrumb, #sidebarright, #sidebarleft,  .button, #footer {
-		display: none !important;
-	}
-	@page {
-		margin: 2cm;
-	}
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1206 */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: black;
+    background-color: white;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1212 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+    page-break-after: avoid;
+    font-size: 21pt;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1217 */
+  h2 {
+    font-size: 16pt;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1220 */
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 12pt;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1223 */
+  ul,
+  ol {
+    page-break-inside: avoid;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1226 */
+  img {
+    page-break-inside: avoid;
+    max-width: 75%;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1230 */
+  a,
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1234 */
+  #wrapper {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1239 */
+  #framebox {
+    padding: 0;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1242 */
+  #floatcontentleft,
+  #floatcontentright {
+    float: none;
+    width: auto;
+    line-height: normal;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1247 */
+  #content {
+    line-height: normal;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1250 */
+  .bildunterschrift {
+    color: black;
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1253 */
+  #banner,
+  #topline,
+  #navbar,
+  .flexslider,
+  #breadcrumb,
+  #sidebarright,
+  #sidebarleft,
+  .button,
+  #footer {
+    display: none !important;
+  }
+  @page {
+    margin: 2cm;
+  }
 }
 /* ZP-Grid */
-.zpgrid{
-	margin-left: -15px;
-	margin-right: -15px;
+
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1261 */
+.zpgrid {
+  margin-left: -15px;
+  margin-right: -15px;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1265 */
 .zpContainer.styled div.zpRow .zpColumn {
-    margin-top: 1em;
+  margin-top: 1em;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1268 */
 .zpContainer.zpBreakout {
-    padding: 0 !important;
+  padding: 0 !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1271 */
 .zpContainer.zpBreakout .zpRow {
-    max-width: 1000px !important;
+  max-width: 1010px !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1274 */
 #framebox .zpContainer.zpBreakout {
-    width: auto !important;
-    max-width: none !important;
-    margin: 0 -5px !important;
-    padding: 0 10px !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 -5px !important;
+  padding: 0 10px !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1280 */
 #floatcontentleft .zpContainer.zpBreakout,
 #floatcontentright .zpContainer.zpBreakout {
-    margin: 0 !important;
-    padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1285 */
 #framebox .zpContainer.zpBreakout .zpRow {
-    width: auto !important;
-    max-width: none !important;
+  width: auto !important;
+  max-width: none !important;
 }
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1289 */
 #sidebarright div.zpRow .zpColumn,
-#sidebarleft div.zpRow .zpColumn {
-    padding: 0;
+#sidebarleft div.zpRow .zpColumn,
+#newsright div.zpRow .zpColumn,
+#newsleft div.zpRow .zpColumn {
+  padding: 0;
 }
-
-body.plain #line{background: transparent;}
-body.plain #webboxplus{padding: 20px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\Travel Responsive\assets\styles.less:L1296 */
+body.plain #line {
+  background: transparent;
+}
