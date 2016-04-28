@@ -1,11 +1,11 @@
 ﻿/* Sanitize and default Values in case #val() Values from ZPp are empty or not plain numbers */
 /* BEGIN ZP 12 Grid Style */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L18 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L18 */
 div.zpRow {
   margin-bottom: 15px;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L21 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L21 */
 div.zpRow:after {
   visibility: hidden;
   display: block;
@@ -13,48 +13,75 @@ div.zpRow:after {
   clear: both;
   height: 0;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L29 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L29 */
 div.zpRow div.zpColumn img.singleImage {
   max-width: 100% !important;
   height: auto !important;
   display: inline-block;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L34 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L34 */
 div.zpRow div.zpColumn .zpImageGallery img.singleImage {
   display: block;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L38 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L38 */
 div.zpRow div.zpColumn .zpImageGallery a.fancybox {
   max-width: 100%;
   /* Bugfix to keep image responsive in IE11 */
 
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L42 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L42 */
 div.zpRow div.zpColumn div.zpColumnItem {
   display: block;
   float: left;
   padding: 0;
 }
+/* END ZP 12 Grid Style */
+
+/* *** Global Rules applying to all Layouts ***/
+
 /* Media Queries */
 
 @media print {
-  /* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L49 */
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L53 */
   div.zpRow {
     margin-bottom: 0 !important;
   }
-  /* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L52 */
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L56 */
   div.zpRow div.zpColumn {
     float: none !important;
     width: 100% !important;
     margin-left: 0 !important;
     margin-bottom: 15px !important;
   }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L62 */
+  html,
+  body {
+    height: auto;
+    /* solves a problem with printing to pdf when height is 100% */
+  
+  }
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L65 */
+  #top {
+    page-break-before: always;
+  }
 }
-/* END ZP 12 Grid Style */
+/* more responsive iFrames and iFrame Containers */
 
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L71 */
+iframe,
+object,
+embed,
+.zpwIFrame,
+.zpwFacebook_Like-Button,
+.zpwFacebook_Like-Box,
+div.fb-like {
+  max-width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
 /* Remove eventual borders from 1px images */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L62 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L79 */
 img[width="1px"],
 img[width="1"],
 .plain > img,
@@ -62,13 +89,15 @@ img.plain {
   border: none !important;
   box-shadow: none !important;
 }
+/* *** End Global Rules applying to all Layouts ***/
+
 /* ADDED StS ZP 13 Grid */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L71 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L90 */
 div.zpRow .zpColumn {
   margin-bottom: 1em;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L74 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
 div.zpRow .zpColumn,
 .zpColumnItem {
   box-sizing: border-box;
@@ -77,19 +106,19 @@ div.zpRow .zpColumn,
   /* IE Bugfix */
 
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L79 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L98 */
 .zpColumnItem {
   width: 100%;
   /* fill enclosing zpColumn, so inline editing resizing refletcs the column and not the columnItem */
 
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L82 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L101 */
 div.zpRow .zpColumn {
   padding: 0 15px;
 }
 /* ***** 12-column grid ***** */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L87 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L106 */
 .c1,
 .c2,
 .c4,
@@ -103,80 +132,80 @@ div.zpRow .zpColumn {
 .c12 {
   box-sizing: border-box;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c12,
 .zpColumnItem.c12 {
   float: left;
   width: 100%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c11,
 .zpColumnItem.c11 {
   float: left;
   width: 91.666666667%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c10,
 .zpColumnItem.c10 {
   float: left;
   width: 83.333333333%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c9,
 .zpColumnItem.c9 {
   float: left;
   width: 75%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c8,
 .zpColumnItem.c8 {
   float: left;
   width: 66.666666667%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c7,
 .zpColumnItem.c7 {
   float: left;
   width: 58.333333333%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c6,
 .zpColumnItem.c6 {
   float: left;
   width: 50%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c5,
 .zpColumnItem.c5 {
   float: left;
   width: 41.666666667%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c4,
 .zpColumnItem.c4 {
   float: left;
   width: 33.333333333%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c3,
 .zpColumnItem.c3 {
   float: left;
   width: 25%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c2,
 .zpColumnItem.c2 {
   float: left;
   width: 16.666666667%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L93 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L112 */
 div.zpRow .zpColumn.c1,
 .zpColumnItem.c1 {
   float: left;
   width: 8.333333333%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L108 */
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L110 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L127 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L129 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c1,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c1,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c1,
@@ -188,7 +217,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 12.5%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L117 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L136 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c3,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c3,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c3,
@@ -196,7 +225,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 25%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L122 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L141 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c4,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c4,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c4,
@@ -208,7 +237,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 37.5%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L129 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L148 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c6,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c6,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c6,
@@ -216,7 +245,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 50%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L134 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L153 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c7,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c7,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c7,
@@ -228,7 +257,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 62.5%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L141 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L160 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c9,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c9,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c9,
@@ -236,7 +265,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 75%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L146 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L165 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c10,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c10,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c10,
@@ -248,7 +277,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 87.5%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L153 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L172 */
 .zpgrid[data-numcolumns="8"] div.zpRow .zpColumn.c12,
 .zparea[data-numcolumns="8"] div.zpRow .zpColumn.c12,
 .zpgrid[data-numcolumns="8"] .zpColumnItem.c12,
@@ -256,8 +285,8 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 100%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L159 */
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L161 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L178 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L180 */
 .zpgrid[data-numcolumns="6"] div.zpRow .zpColumn.c1,
 .zparea[data-numcolumns="6"] div.zpRow .zpColumn.c1,
 .zpgrid[data-numcolumns="6"] .zpColumnItem.c1,
@@ -269,7 +298,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 16.666666667%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L167 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L186 */
 .zpgrid[data-numcolumns="6"] 3 div.zpRow .zpColumn.c3,
 .zparea[data-numcolumns="6"] 3 div.zpRow .zpColumn.c3,
 .zpgrid[data-numcolumns="6"] .zpColumnItem.c3,
@@ -281,7 +310,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 33.333333333%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L175 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L194 */
 .zpgrid[data-numcolumns="6"] div.zpRow .zpColumn.c5,
 .zparea[data-numcolumns="6"] div.zpRow .zpColumn.c5,
 .zpgrid[data-numcolumns="6"] .zpColumnItem.c5,
@@ -293,7 +322,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 50%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L182 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L201 */
 .zpgrid[data-numcolumns="6"] div.zpRow .zpColumn.c7,
 .zparea[data-numcolumns="6"] div.zpRow .zpColumn.c7,
 .zpgrid[data-numcolumns="6"] .zpColumnItem.c7,
@@ -305,7 +334,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 66.666666667%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L189 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L208 */
 .zpgrid[data-numcolumns="6"] div.zpRow .zpColumn.c9,
 .zparea[data-numcolumns="6"] div.zpRow .zpColumn.c9,
 .zpgrid[data-numcolumns="6"] .zpColumnItem.c9,
@@ -317,7 +346,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 83.333333333%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L196 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L215 */
 .zpgrid[data-numcolumns="6"] div.zpRow .zpColumn.c11,
 .zparea[data-numcolumns="6"] div.zpRow .zpColumn.c11,
 .zpgrid[data-numcolumns="6"] .zpColumnItem.c11,
@@ -329,8 +358,8 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 100%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L204 */
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L206 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L223 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L225 */
 .zpgrid[data-numcolumns="4"] div.zpRow .zpColumn.c1,
 .zparea[data-numcolumns="4"] div.zpRow .zpColumn.c1,
 .zpgrid[data-numcolumns="4"] .zpColumnItem.c1,
@@ -346,7 +375,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 25%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L215 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L234 */
 .zpgrid[data-numcolumns="4"] div.zpRow .zpColumn.c4,
 .zparea[data-numcolumns="4"] div.zpRow .zpColumn.c4,
 .zpgrid[data-numcolumns="4"] .zpColumnItem.c4,
@@ -362,7 +391,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 50%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L224 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L243 */
 .zpgrid[data-numcolumns="4"] div.zpRow .zpColumn.c7,
 .zparea[data-numcolumns="4"] div.zpRow .zpColumn.c7,
 .zpgrid[data-numcolumns="4"] .zpColumnItem.c7,
@@ -378,7 +407,7 @@ div.zpRow .zpColumn.c1,
   float: left;
   width: 75%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L233 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L252 */
 .zpgrid[data-numcolumns="4"] div.zpRow .zpColumn.c10,
 .zparea[data-numcolumns="4"] div.zpRow .zpColumn.c10,
 .zpgrid[data-numcolumns="4"] .zpColumnItem.c10,
@@ -396,7 +425,7 @@ div.zpRow .zpColumn.c1,
 }
 /* *** always scale columns in a .noresize Row (i.e. news columns) *** */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L245 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L264 */
 div.zpRow.noresize .zpColumn.c1,
 div.zpRow.noresize .zpColumn.c2,
 div.zpRow.noresize .zpColumn.c3,
@@ -411,14 +440,14 @@ div.zpRow.noresize .zpColumn.c11,
 div.zpRow.noresize .zpColumn.c12 {
   width: 100%;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L259 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L278 */
 div.zpRow.noresize .zpSpacer {
   clear: both;
 }
 /* *** 1-Column Breakpoint (iphone 6 landscape) *** */
 
 @media (max-width: 667px) {
-  /* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L264 */
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L283 */
   div.zpRow .zpColumn.c1,
   .zpColumnItem.c1,
   div.zpRow .zpColumn.c2,
@@ -445,23 +474,23 @@ div.zpRow.noresize .zpSpacer {
   .zpColumnItem.c12 {
     width: 100% !important;
   }
-  /* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L279 */
+  /* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L298 */
   .zpSpacer {
     clear: both;
   }
 }
 /* Breakout Styles for layouts which don't support them edge to edge */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L285 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L304 */
 body:not(.withnews) .zpContainer.zpBreakout:not(.hasNews) {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L289 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L308 */
 body:not(.withnews) .zpContainer.zpBreakout:not(.hasNews) + .zpContainer:not(.zpBreakout) {
   margin-top: 15px;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L292 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L311 */
 body:not(.withnews) .zpBreakout:not(.hasNews) .zpRow {
   width: 100%;
   margin: 0 auto;
@@ -469,7 +498,7 @@ body:not(.withnews) .zpBreakout:not(.hasNews) .zpRow {
 }
 /* Breakout Styles for responsive layouts which support them edge to edge */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L297 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L316 */
 .responsivelayout.supportsbreakout body:not(.withnews) .zpContainer.zpBreakout:not(.hasNews) {
   /* we don't use overflow hidden on body to avoid horizontal scrollbar because dropdown menues (e.g. on the far right) might need an overflow */
   width: calc(100vw - 9px);
@@ -480,29 +509,29 @@ body:not(.withnews) .zpBreakout:not(.hasNews) .zpRow {
   /* padding-left is equal to amount to compensate scrollbar */
 
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L304 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L323 */
 .responsivelayout.supportsbreakout body.touch:not(.withnews) .zpContainer.zpBreakout:not(.hasNews) {
   width: 100vw;
   /* Do not compensate on transparent Scrollbars on touch devices like e.g. the ipad. */
 
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L307 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L326 */
 .responsivelayout.supportsbreakout body:not(.withnews) .zpContainer.zpBreakout:not(.hasNews) + .zpContainer:not(.zpBreakout) {
   margin-top: 15px;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L310 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L329 */
 .responsivelayout.supportsbreakout body:not(.withnews) .zpContainer.zpBreakout:not(.hasNews) > .zpRow {
   max-width: 970px;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L315 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L334 */
 .responsivelayout.supportsbreakout body:not(.withnews) .zpContainer.zpBreakout:not(.hasNews) + .zpRow {
   margin-top: 15px;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L319 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L338 */
 .responsivelayout.supportsbreakout body:not(.withnews) .span8 .zpContainer.zpBreakout:not(.hasNews) {
   margin-left: calc(-50vw + 77%);
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L324 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L343 */
 .supportsbreakout body:not(.withnews) .zpColumn .zpBreakout:not(.hasNews) {
   /* we don't use overflow hidden on body to avoid horizontal scrollbar because dropdown menues (e.g. on the far right) might need an overflow */
   width: calc(91vw);
@@ -514,7 +543,7 @@ body:not(.withnews) .zpBreakout:not(.hasNews) .zpRow {
   /* padding-left is equal to amount to compensate scrollbar */
   overflow: hidden !important;
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L334 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L353 */
 .zpVerticalCenter,
 div.zpRow.zpVerticalCenter,
 div.zpRow .zpVerticalCenter,
@@ -531,7 +560,7 @@ div.zpRow .zpColumn .zpVerticalCenter {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L352 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L371 */
 .zpwSpacer {
   visibility: hidden;
   box-sizing: border-box;
@@ -545,7 +574,7 @@ div.zpRow .zpColumn .zpVerticalCenter {
 }
 */
 
-/* C:\Users\Peiskar\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L368 */
+/* C:\Users\Elena\AppData\Local\Zeta Producer 13\packaging\layouts\_shared\assets\zpgrid.less:L387 */
 .zpgrid.copiedlayout {
   margin-left: -15px;
   margin-right: -15px;
