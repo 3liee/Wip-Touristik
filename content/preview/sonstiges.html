@@ -23,7 +23,8 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/zpgrid.css?v=635922708560000000" />
 <link rel="stylesheet" type="text/css" href="assets/js/fancybox/jquery.fancybox-1.3.4-cleaned.css?v=635963096360156180" />
-<link rel="stylesheet" type="text/css" href="assets/styles.css?v=635922708580000000" />
+<link rel="stylesheet" type="text/css" href="assets/slider-global.css?v=635963096356948161" />
+<link rel="stylesheet" type="text/css" href="assets/styles.css?v=635966067845846244" />
 
 	 
 		
@@ -33,7 +34,8 @@
 	<script type="text/javascript" src="assets/jquery/jquery-1.7.1.js?v=635963096358751689"></script>
 <script type="text/javascript" src="assets/jquery/zp-noconflict.js?v=635963096359241390"></script>
 <script type="text/javascript" src="assets/js/app.js?v=635963096359311440"></script>
-<script type="text/javascript" src="assets/imagegallery.js?v=635963096354936305"></script>
+<script type="text/javascript" src="assets/imagegallery.js?v=635963096356339987"></script>
+<script type="text/javascript" src="assets/jquery.flexslider.js?v=635963096356714661"></script>
 <script type="text/javascript" src="assets/js/fancybox/jquery.fancybox-1.3.4z_easing-1.3.pack.js?v=635963096360552170"></script>
 	
 	
@@ -691,29 +693,20 @@
 	var breakpoint = 768;
 	
 	$z(document).ready(function () {
-		// use touchstart if on touch, click events if on non touch devices (to eliminate a 300ms delay)
-		var listenEvent = 'ontouchend' in document.documentElement ? "touchend" : "click";
 		// switches the Mobile Navigation-Menu on/off, when "Menu" link is clicked.
-		$z("a#mobilenavtoggle").on( listenEvent, function(e){
+		$z("a#mobilenavtoggle").on("click", function(e){
 			$z("#navbar").slideToggle(300, function (){
 				$z("#navbar, #navbar ul.mainmenu, #mobilenavtoggle").toggleClass("on");
 				//clear inline styles set by "slideToggle" so the don't stick around e.g. after window enlargement or orientation change
 				$z(this).css("display",""); 	
 			});
-			
-			if ( listenEvent === "touchend" ){
-				// try to prevent flickering on touchDevices due to :touchend bubbling as :hover...
-				e.stopPropagation();
-				e.preventDefault(); 
-				this.click();
-			}
 		});
 	});
 </script>
 
 <!--
 * Layout: Travel Responsive by StS
-* $Id: default.html 36818 2016-02-15 10:03:32Z sseiz $
+* $Id: default.html 38198 2016-03-22 13:09:49Z sseiz $
 * Copyright Zeta Software GmbH 2014
 -->
 </body>
