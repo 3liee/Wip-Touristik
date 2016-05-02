@@ -23,7 +23,8 @@
 
 	<link rel="stylesheet" type="text/css" href="../assets/zpgrid.css?v=635922708560000000" />
 <link rel="stylesheet" type="text/css" href="../assets/js/fancybox/jquery.fancybox-1.3.4-cleaned.css?v=635963096360156180" />
-<link rel="stylesheet" type="text/css" href="../assets/styles.css?v=635922708580000000" />
+<link rel="stylesheet" type="text/css" href="../assets/slider-global.css?v=635963096356948161" />
+<link rel="stylesheet" type="text/css" href="../assets/styles.css?v=635966067845846244" />
 
 	 
 		
@@ -33,7 +34,8 @@
 	<script type="text/javascript" src="../assets/jquery/jquery-1.7.1.js?v=635963096358751689"></script>
 <script type="text/javascript" src="../assets/jquery/zp-noconflict.js?v=635963096359241390"></script>
 <script type="text/javascript" src="../assets/js/app.js?v=635963096359311440"></script>
-<script type="text/javascript" src="../assets/imagegallery.js?v=635963096354936305"></script>
+<script type="text/javascript" src="../assets/imagegallery.js?v=635963096356339987"></script>
+<script type="text/javascript" src="../assets/jquery.flexslider.js?v=635963096356714661"></script>
 <script type="text/javascript" src="../assets/js/fancybox/jquery.fancybox-1.3.4z_easing-1.3.pack.js?v=635963096360552170"></script>
 	
 	
@@ -422,7 +424,7 @@
 	
 		
 			
-				<div class="zpRow standard  " 
+				<div class="zpRow standard zpwSlider  " 
 					
 					data-type="inline-editing" data-context="row" data-area-name="Standard" data-row-id="237" data-item-id="237" data-column-count="1" data-column-count-max="0"
 					
@@ -438,50 +440,197 @@
 			
 					
 
-
-	
-
-		
 <div class="zpColumnItem" >
-	<div id="a1539" data-articleid="1539" class="articlearea zpwBild popupimage" 
+	<div id="a1593" data-articleid="1593" class="articlearea zpwSlider zp13sliderWidget defaultbg" style="margin-bottom:20px; " 
 	 
 	 data-type="inline-editing"
 	 data-context="article"
 	 data-area-name="Standard"
-	 data-item-id="1539"
+	 data-item-id="1593"
 	 data-item-state="active" 
 	 data-row-id="237" 
 	 data-item-inherited="false"
 	
 	>
 	
-			<div id="igal1539" class="zpImageGallery"
-			 data-kind="singleimage"
-			 data-titleShow="1"
-			 data-htmltitle="&lt;p style=&quot;text-align: center&quot;&gt;M&#252;ritzsee (Mecklenburgische Seenplatte)&lt;/p&gt;"
-			 data-width="auto"
-			 data-height="auto"
-			 data-bordercolor="default"
-			 data-borderwidth="0"
-			 data-margin="0"
-			 data-titleposition="outside"
-			 data-transition="elastic"
-			 data-slideshow="0">
-			<a class="fancybox" href="../media/images/mueritzsee-large.png" title="M&#252;ritzsee (Mecklenburgische Seenplatte)">
-				<img class="singleImage" src="../media/images/mueritzsee.png" width="940" height="529" alt="" />
-			</a>
+	<div class="zp13slider-container">
+		<ul class="zp13slider">
+		
+		
+			<li>
+				
+				
+					<img src="../media/images/6b32cb43d4a041eb9898180aeb8addbd.jpg" alt="" />
+				
+				
+				
+			</li>
 
-			
-				<span class="imagedescription" style="display:block; clear:both; padding-top:5px;"><p style="text-align: center">Müritzsee (Mecklenburgische Seenplatte)<br /></span>
-			
 		
-			</div>
 		
+			<li>
+				
+				
+					<img src="../media/images/23bdd9fab2494465b2987b49077cdb8a.jpg" alt="" />
+				
+				
+				
+			</li>
+
+		
+		
+			<li>
+				
+				
+					<img src="../media/images/64ffbee6769f4d718faaa8be665711f2.jpg" alt="" />
+				
+				
+				
+			</li>
+
+		
+		
+			<li>
+				
+				
+					<img src="../media/images/11671ada67ae4c6fbeea5cddea6ab6bc.jpg" alt="" />
+				
+				
+				
+			</li>
+
+		
+		
+			<li>
+				
+				
+					<img src="../media/images/cff21d6ad0984ffabc54b2e871178fad.jpg" alt="" />
+				
+				
+				
+			</li>
+
+		
+
+	</ul>
+  </div>
+
 	</div>
 </div>
 
 
+
+
+
+	<script type="text/javascript">
+		$z(document).ready(function() {
+			// init flexslider after 1st image has loaded, so have dimensions as quickly as possible without having to wait too long on window loaded or such and can start right with doc ready
+			$z('[data-articleid="1593"] ul.zp13slider li img').first().one("load", function(){
+				$z('[data-articleid="1593"] .zp13slider-container').flexslider({
+					useCSS: true,
+					touch: true,
+					itemMargin: 20,
+					animation: 'fade',
+					namespace: 'zp13slider-',
+					selector: '.zp13slider > li',
+					controlsContainer: '[data-articleid="1593"].zp13sliderWidget',
+					multipleKeyboard: true,
+					slideshow: 1,
+					slideshowSpeed: 8000,
+					directionNav: true,
+					controlNav: true,
+					randomize: false,
+					start: function(){ setTimeout(zpieInit,1000); },
+					pauseOnHover: true,
+					smoothHeight: true,
+					prevText: "zur&#252;ck",
+					nextText: "weiter"
+				});
+			}).each(function() {
+				if(this.complete) $z(this).load();
+			}); // .each() is to work around a browser bugs which don't fire load() for cached images http://stackoverflow.com/a/3877079
+		
+			// make sure the slider is properly resized when the window is resized (400ms after window.resize ended)
+			$z('[data-articleid="1593"] .zp13slider-container').on('resize',function(event){
+				// prevents slider.resize() from causing a windows.resize event again which looped
+				event.stopPropagation();
+			});
+			var sliderTimeout1593 = null;
+			$z(window).resize(function(event) {
+				clearTimeout(sliderTimeout1593);
+				sliderTimeout1593 = setTimeout(function() {
+					var slider = $z('[data-articleid="1593"] .zp13slider-container').data('flexslider');   
+					slider.resize();
+					clearTimeout(sliderTimeout1593); 
+				}, 400);
+				
+			});
+		});
+  	</script>
+
+
+<div class="zpColumnItem" >
+	<div id="a1598" data-articleid="1598" class="articlearea zpwHinweisbox" style="margin-bottom:20px; " 
+	 
+	 data-type="inline-editing"
+	 data-context="article"
+	 data-area-name="Standard"
+	 data-item-id="1598"
+	 data-item-state="active" 
+	 data-row-id="237" 
+	 data-item-inherited="false"
 	
+	>
+	
+	<div class="zpSO-hint" style="padding: 8px 16px; background: #EFF2F4; border: 1px solid #D0D7DD; ">
+        
+
+	<h2 style="color: #0D1D2B; ">Lernen Sie uns kennen!</h2>
+
+		<div style="color: #0D1D2B;"><p><span style="font-size: medium"></span><span style="font-size: medium">Lernen Sie Ihre nächste Reiseleitung kennen 
+und erfahren Sie wer hinter der Planung Ihrer Reise steht!</span></p>
+<p><span style="font-size: medium">Wir - </span><a href="../ueber-uns-01.html?page-id=522"><span style="font-size: medium">Irmgard und Wolfgang</span></a><span style="font-size: medium"> - kundschaften immer vor Ort 
+für Sie jedes Reiseziel aus, um Ihnen einen wundervollen und reibungslosen 
+Urlaub zu ermöglichen! </span></p>
+<p><span style="font-size: medium">Die Planung wird vom Frühstück bis zum Abendessen für Sie 
+übernommen, aber auch frei zur Verfügung stehende Zeit, die jeder für sich 
+selbst und seine Wünsche nutzen kann ist eingeplant!</span></p></div>
+	</div>
+
+	</div>
+</div>
+
+
+<div class="zpColumnItem" >
+	<div id="a1597" data-articleid="1597" class="articlearea zpwHinweisbox" 
+	 
+	 data-type="inline-editing"
+	 data-context="article"
+	 data-area-name="Standard"
+	 data-item-id="1597"
+	 data-item-state="active" 
+	 data-row-id="237" 
+	 data-item-inherited="false"
+	
+	>
+	
+	<div class="zpSO-hint" style="padding: 8px 16px; background: #EFF2F4; border: 1px solid #D0D7DD; ">
+        
+
+	<h2 style="color: #0D1D2B; ">3-Tages-Fahrt nach Bayreuth</h2>
+
+		<div style="color: #0D1D2B;"><p style="MARGIN-TOP: 20px"><span style="font-size: medium">Unsere </span><a href="../3-tagesfahrt-nach-bayreuth.html?page-id=533"><span style="font-size: medium">nächste 
+Reise</span></a><span style="font-size: medium"> ermöglicht Ihnen neue Einblicke in die Stadt 
+Bayreuth! Lernen Sie diesen wundervollen Ort von seiner schönsten Seite kennen. 
+</span></p>
+<p style="MARGIN-TOP: 20px"><span style="font-size: medium">In der Landesgartenschau können Sie in 
+einem wahren Blütenmeer aus verschiedensten Farben 
+versinken.</span></p></div>
+	</div>
+
+	</div>
+</div>
+
 
 			
 					</div>
@@ -674,29 +823,20 @@
 	var breakpoint = 768;
 	
 	$z(document).ready(function () {
-		// use touchstart if on touch, click events if on non touch devices (to eliminate a 300ms delay)
-		var listenEvent = 'ontouchend' in document.documentElement ? "touchend" : "click";
 		// switches the Mobile Navigation-Menu on/off, when "Menu" link is clicked.
-		$z("a#mobilenavtoggle").on( listenEvent, function(e){
+		$z("a#mobilenavtoggle").on("click", function(e){
 			$z("#navbar").slideToggle(300, function (){
 				$z("#navbar, #navbar ul.mainmenu, #mobilenavtoggle").toggleClass("on");
 				//clear inline styles set by "slideToggle" so the don't stick around e.g. after window enlargement or orientation change
 				$z(this).css("display",""); 	
 			});
-			
-			if ( listenEvent === "touchend" ){
-				// try to prevent flickering on touchDevices due to :touchend bubbling as :hover...
-				e.stopPropagation();
-				e.preventDefault(); 
-				this.click();
-			}
 		});
 	});
 </script>
 
 <!--
 * Layout: Travel Responsive by StS
-* $Id: default.html 36818 2016-02-15 10:03:32Z sseiz $
+* $Id: default.html 38198 2016-03-22 13:09:49Z sseiz $
 * Copyright Zeta Software GmbH 2014
 -->
 </body>

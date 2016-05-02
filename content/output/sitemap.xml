@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.wip-touristik.de/index.html/index.html</loc>
+    <lastmod>2016-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://www.wip-touristik.de/3-tagesfahrt-nach-bayreuth.html</loc>
-    <lastmod>2016-04-17</lastmod>
+    <lastmod>2016-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.wip-touristik.de/5-tagesfahrt-in-die-mecklenburgische-seenplatte.html</loc>
+    <lastmod>2016-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -151,19 +163,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.wip-touristik.de/5-tagesfahrt-in-die-mecklenburgische-seenplatte.html</loc>
-    <lastmod>2016-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://www.wip-touristik.de/service.html</loc>
-    <lastmod>2016-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.wip-touristik.de/index.html/index.html</loc>
     <lastmod>2016-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
