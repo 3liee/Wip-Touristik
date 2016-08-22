@@ -20,8 +20,9 @@ function is_touch_device() {
 	//return !!('ontouchstart' in window) || !!(navigator.msMaxTouchPoints) || !!(navigator.maxTouchPoints) || window.DocumentTouch && document instanceof DocumentTouch ;
 
 	// use same logic as jquery.flexslider.js
-	var msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
-    touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch);
+	//var msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
+    //touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch);
+    var touch = 'ontouchstart' in window || navigator.maxTouchPoints;
 	return touch;
 }
 
