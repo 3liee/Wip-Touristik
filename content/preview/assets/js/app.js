@@ -17,7 +17,13 @@ function trace(s) {
 
 // test for touch device
 function is_touch_device() {
-	return !!('ontouchstart' in window) || !!(navigator.msMaxTouchPoints) || !!(navigator.maxTouchPoints) || window.DocumentTouch && document instanceof DocumentTouch ;
+	//return !!('ontouchstart' in window) || !!(navigator.msMaxTouchPoints) || !!(navigator.maxTouchPoints) || window.DocumentTouch && document instanceof DocumentTouch ;
+
+	// use same logic as jquery.flexslider.js
+	//var msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
+    //touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch);
+    var touch = 'ontouchstart' in window || navigator.maxTouchPoints;
+	return touch;
 }
 
 // Helper for Nav-Menues with hover effects to make them work via alternating clicks
@@ -25,7 +31,6 @@ function is_touch_device() {
 function hoverToClickMenu(element, breakpointMobileMenu, instancenumber, triangleMode) { 
 	//var listenEvent = 'ontouchend' in document.documentElement ? "touchend" : "click";
 	var listenEvent = "click";
-	// switch triangleMode on in Mobile Menues where we always show the triangles
 		
 	// The stock browser on Android 4.X can't cancel touchend events and will thus always fire an additional click event, so we need to revert to click events StS 2015-02-24
 	if ( nualc.indexOf("android 4") > -1 && nualc.indexOf("chrome") === -1 ) {
@@ -51,6 +56,7 @@ function hoverToClickMenu(element, breakpointMobileMenu, instancenumber, triangl
 
 	var firstClick = function(e) {
 		if ( breakpointMobileMenu !== undefined && $z(window).width() <= parseInt(breakpointMobileMenu) ){
+			// switch triangleMode on in Mobile Menues where we always show the triangles
 			triangleMode = true;
 		}
 		else if ( !is_touch_device() && breakpointMobileMenu !== undefined && listenEvent == "click" && $z(window).width() > parseInt(breakpointMobileMenu) ) {
